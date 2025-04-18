@@ -54,11 +54,7 @@ namespace ElectronicsStore.Controllers
         [Authorize]
         public async Task<IActionResult> Checkout()
         {
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            var cartItems = await _context.CartItems
-                .Where(c => c.CartId == userId)
-                .Include(c => c.Product)
-                .ToListAsync();
+            var cartItems = await _cartService.GetCartItemsAsync();
 
             if (cartItems.Count == 0)
             {
@@ -79,10 +75,7 @@ namespace ElectronicsStore.Controllers
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             var user = await _userManager.FindByIdAsync(userId);
             
-            var cartItems = await _context.CartItems
-                .Where(c => c.CartId == userId)
-                .Include(c => c.Product)
-                .ToListAsync();
+            var cartItems = await _cartService.GetCartItemsAsync();
 
             if (cartItems.Count == 0)
             {
@@ -118,11 +111,11 @@ namespace ElectronicsStore.Controllers
             _context.Orders.Add(order);
 
             // Clear the cart
-            _context.CartItems.RemoveRange(cartItems);
+            await _cartService.ClearCartAsync();
             await _context.SaveChangesAsync();
 
             TempData["Success"] = "Your order has been placed successfully!";
-            return RedirectToAction(nameof(Details), new { id = order.Id });
+            return RedirectToAction(nameof(Index));
         }
 
         [HttpPost]
@@ -130,102 +123,116 @@ namespace ElectronicsStore.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> PlaceOrder(string shippingAddress, string paymentMethod)
         {
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            var cartItems = await _context.CartItems
-                .Where(c => c.CartId == userId)
-                .Include(c => c.Product)
-                .ToListAsync();
-
-            if (cartItems.Count == 0)
+            try 
             {
-                TempData["Error"] = "Your cart is empty";
+                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                var cartItems = await _cartService.GetCartItemsAsync();
+
+                if (cartItems.Count == 0)
+                {
+                    TempData["Error"] = "Your cart is empty";
+                    return RedirectToAction("Index", "Cart");
+                }
+
+                var total = cartItems.Sum(item => item.Product.Price * item.Quantity);
+
+                // Create the order
+                var order = new Order
+                {
+                    UserId = userId,
+                    OrderDate = DateTime.Now,
+                    TotalAmount = total,
+                    ShippingAddress = shippingAddress,
+                    PaymentMethod = paymentMethod,
+                    Status = OrderStatus.Pending,
+                    OrderItems = new List<OrderItem>()
+                };
+
+                // Add order items
+                foreach (var item in cartItems)
+                {
+                    order.OrderItems.Add(new OrderItem
+                    {
+                        ProductId = item.ProductId,
+                        Quantity = item.Quantity,
+                        Price = item.Product.Price
+                    });
+                }
+
+                _context.Orders.Add(order);
+
+                // Clear the cart
+                await _cartService.ClearCartAsync();
+                await _context.SaveChangesAsync();
+
+                TempData["Success"] = "Your order has been placed successfully!";
+                return RedirectToAction(nameof(Index));
+            }
+            catch (Exception ex)
+            {
+                // Log the error
+                Console.WriteLine($"Error in PlaceOrder: {ex.Message}");
+                TempData["Error"] = "There was an error placing your order. Please try again.";
                 return RedirectToAction("Index", "Cart");
             }
-
-            var total = cartItems.Sum(item => item.Product.Price * item.Quantity);
-
-            // Create the order
-            var order = new Order
-            {
-                UserId = userId,
-                OrderDate = DateTime.Now,
-                TotalAmount = total,
-                ShippingAddress = shippingAddress,
-                PaymentMethod = paymentMethod,
-                Status = OrderStatus.Pending,
-                OrderItems = new List<OrderItem>()
-            };
-
-            // Add order items
-            foreach (var item in cartItems)
-            {
-                order.OrderItems.Add(new OrderItem
-                {
-                    ProductId = item.ProductId,
-                    Quantity = item.Quantity,
-                    Price = item.Product.Price
-                });
-            }
-
-            _context.Orders.Add(order);
-
-            // Clear the cart
-            _context.CartItems.RemoveRange(cartItems);
-            await _context.SaveChangesAsync();
-
-            TempData["Success"] = "Your order has been placed successfully!";
-            return RedirectToAction(nameof(Index));
         }
 
         [HttpPost]
         [Authorize]
         public async Task<IActionResult> DirectCheckout(string shippingAddress, string paymentMethod)
         {
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            var cartItems = await _context.CartItems
-                .Where(c => c.CartId == userId)
-                .Include(c => c.Product)
-                .ToListAsync();
-
-            if (cartItems.Count == 0)
+            try
             {
-                TempData["Error"] = "Your cart is empty";
+                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                var cartItems = await _cartService.GetCartItemsAsync();
+
+                if (cartItems.Count == 0)
+                {
+                    TempData["Error"] = "Your cart is empty";
+                    return RedirectToAction("Index", "Cart");
+                }
+
+                var total = cartItems.Sum(item => item.Product.Price * item.Quantity);
+
+                // Create the order
+                var order = new Order
+                {
+                    UserId = userId,
+                    OrderDate = DateTime.Now,
+                    TotalAmount = total,
+                    ShippingAddress = shippingAddress,
+                    PaymentMethod = paymentMethod,
+                    Status = OrderStatus.Pending,
+                    OrderItems = new List<OrderItem>()
+                };
+
+                // Add order items
+                foreach (var item in cartItems)
+                {
+                    order.OrderItems.Add(new OrderItem
+                    {
+                        ProductId = item.ProductId,
+                        Quantity = item.Quantity,
+                        Price = item.Product.Price
+                    });
+                }
+
+                _context.Orders.Add(order);
+
+                // Clear the cart
+                await _cartService.ClearCartAsync();
+                await _context.SaveChangesAsync();
+
+                TempData["Success"] = "Your order has been placed successfully!";
+                return RedirectToAction(nameof(Index));
+            }
+            catch (Exception ex)
+            {
+                // Log the error
+                Console.WriteLine($"Error in DirectCheckout: {ex.Message}");
+                TempData["Error"] = "There was an error placing your order. Please try again.";
                 return RedirectToAction("Index", "Cart");
             }
-
-            var total = cartItems.Sum(item => item.Product.Price * item.Quantity);
-
-            // Create the order
-            var order = new Order
-            {
-                UserId = userId,
-                OrderDate = DateTime.Now,
-                TotalAmount = total,
-                ShippingAddress = shippingAddress,
-                PaymentMethod = paymentMethod,
-                Status = OrderStatus.Pending,
-                OrderItems = new List<OrderItem>()
-            };
-
-            // Add order items
-            foreach (var item in cartItems)
-            {
-                order.OrderItems.Add(new OrderItem
-                {
-                    ProductId = item.ProductId,
-                    Quantity = item.Quantity,
-                    Price = item.Product.Price
-                });
-            }
-
-            _context.Orders.Add(order);
-
-            // Clear the cart
-            _context.CartItems.RemoveRange(cartItems);
-            await _context.SaveChangesAsync();
-
-            TempData["Success"] = "Your order has been placed successfully!";
-            return RedirectToAction(nameof(Index));
         }
 
         [Authorize(Roles = "Admin")]
@@ -233,6 +240,8 @@ namespace ElectronicsStore.Controllers
         {
             var orders = await _context.Orders
                 .Include(o => o.User)
+                .Include(o => o.OrderItems)
+                .ThenInclude(oi => oi.Product)
                 .OrderByDescending(o => o.OrderDate)
                 .ToListAsync();
 
