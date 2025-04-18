@@ -1,0 +1,125 @@
+@model ElectronicsStore.ViewModels.ProfileViewModel
+
+@{
+    ViewData["Title"] = "My Profile";
+}
+
+<div class="container py-5">
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show mb-4" role="alert">
+            @TempData["SuccessMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+    
+    <div class="row">
+        <!-- Profile Sidebar -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body text-center">
+                    <div class="mb-3">
+                        <div class="d-inline-block rounded-circle bg-primary text-white p-3" style="width: 100px; height: 100px;">
+                            <span class="fs-1">@Model.FirstName?.Substring(0, 1)@Model.LastName?.Substring(0, 1)</span>
+                        </div>
+                    </div>
+                    <h4>@Model.FullName</h4>
+                    <p class="text-muted mb-1">@Model.Email</p>
+                    <p class="badge bg-primary mb-3">
+                        @string.Join(", ", Model.Roles)
+                    </p>
+                    <div class="d-grid gap-2">
+                        <a asp-action="EditProfile" class="btn btn-primary">
+                            <i class="fas fa-user-edit me-2"></i>Edit Profile
+                        </a>
+                        <a asp-action="ChangePassword" class="btn btn-outline-secondary">
+                            <i class="fas fa-key me-2"></i>Change Password
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card shadow-sm mt-4">
+                <div class="card-body">
+                    <h5 class="card-title">Quick Links</h5>
+                    <div class="list-group list-group-flush">
+                        <a asp-controller="Order" asp-action="MyOrders" class="list-group-item list-group-item-action">
+                            <i class="fas fa-box me-2"></i>My Orders
+                        </a>
+                        <a asp-controller="Home" asp-action="Index" class="list-group-item list-group-item-action">
+                            <i class="fas fa-store me-2"></i>Continue Shopping
+                        </a>
+                        <a asp-controller="Cart" asp-action="Index" class="list-group-item list-group-item-action">
+                            <i class="fas fa-shopping-cart me-2"></i>View Cart
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Profile Details -->
+        <div class="col-md-8">
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">Profile Information</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-6 mb-3">
+                            <h6 class="mb-0">First Name</h6>
+                            <p class="text-muted">@Model.FirstName</p>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <h6 class="mb-0">Last Name</h6>
+                            <p class="text-muted">@Model.LastName</p>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <h6 class="mb-0">Email</h6>
+                            <p class="text-muted">@Model.Email</p>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <h6 class="mb-0">Phone Number</h6>
+                            <p class="text-muted">@(string.IsNullOrEmpty(Model.PhoneNumber) ? "Not provided" : Model.PhoneNumber)</p>
+                        </div>
+                    </div>
+                    
+                    <hr>
+                    
+                    <h5 class="mb-3">Shipping Address</h5>
+                    <address>
+                        @Model.FirstName @Model.LastName<br>
+                        @Model.Address<br>
+                        @Model.City, @Model.State @Model.PostalCode
+                    </address>
+                </div>
+            </div>
+            
+            <!-- Recent Orders -->
+            <div class="card shadow-sm mt-4">
+                <div class="card-header">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0">Recent Orders</h5>
+                        <a asp-controller="Order" asp-action="MyOrders" class="btn btn-sm btn-outline-primary">View All</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <!-- This part would ideally be populated from your order history data -->
+                    <div class="text-center py-3">
+                        <i class="fas fa-box-open text-muted fs-2 mb-3"></i>
+                        <p class="mb-0">Your recent orders will appear here.</p>
+                        <a asp-controller="Home" asp-action="Index" class="btn btn-primary mt-3">Start Shopping</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Hide alerts after 5 seconds
+        setTimeout(function() {
+            $('.alert').alert('close');
+        }, 5000);
+    </script>
+} 

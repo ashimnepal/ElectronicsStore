@@ -123,8 +123,28 @@
                 e.preventDefault();
                 const productId = $(this).data('id');
                 
-                // This will be implemented later with the cart functionality
-                alert('Product added to cart! (ID: ' + productId + ')');
+                $.ajax({
+                    url: '@Url.Action("AddToCart", "Cart")',
+                    type: 'POST',
+                    data: { productId: productId, quantity: 1 },
+                    headers: {
+                        'X-Requested-With': 'XMLHttpRequest'
+                    },
+                    success: function(response) {
+                        if (response.success) {
+                            // Update cart count in navbar
+                            $('.cart-count').text(response.cartCount);
+                            
+                            // Show success message
+                            showNotification('Success', 'Product added to cart!', 'success');
+                        } else {
+                            showNotification('Error', response.message, 'danger');
+                        }
+                    },
+                    error: function() {
+                        showNotification('Error', 'Failed to add product to cart.', 'danger');
+                    }
+                });
             });
             
             // Sorting functionality
@@ -149,6 +169,29 @@
                     productGrid.append(item);
                 });
             });
+            
+            // Toast notification function
+            function showNotification(title, message, type) {
+                const toastHtml = `
+                    <div class="toast align-items-center text-white bg-${type} border-0" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="d-flex">
+                            <div class="toast-body">
+                                <strong>${title}:</strong> ${message}
+                            </div>
+                            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                        </div>
+                    </div>
+                `;
+                
+                const toastContainer = $('.toast-container');
+                if (toastContainer.length === 0) {
+                    $('body').append('<div class="toast-container position-fixed top-0 end-0 p-3"></div>');
+                }
+                
+                $('.toast-container').append(toastHtml);
+                const toast = new bootstrap.Toast($('.toast').last(), { delay: 3000 });
+                toast.show();
+            }
         });
     </script>
 } 

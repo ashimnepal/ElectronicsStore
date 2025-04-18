@@ -1,0 +1,9 @@
+@model int
+
+<a asp-controller="Cart" asp-action="Index" class="text-light position-relative">
+    <i class="fas fa-shopping-cart fs-5"></i>
+    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-count">
+        @Model
+        <span class="visually-hidden">items in cart</span>
+    </span>
+</a> 
