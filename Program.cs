@@ -1,5 +1,6 @@
 using ElectronicsStore.Data;
 using ElectronicsStore.Models;
+using ElectronicsStore.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -30,6 +31,12 @@ builder.Services.AddSession(options =>
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
 });
+
+// Add HttpContextAccessor
+builder.Services.AddHttpContextAccessor();
+
+// Add Cart Service
+builder.Services.AddScoped<CartService>();
 
 // Add services to the container
 builder.Services.AddControllersWithViews();

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/ElectronicsStore.styles.css" asp-append-version="true" />
+    @await RenderSectionAsync("Styles", required: false)
 </head>
 <body>
     <header>
@@ -39,8 +40,29 @@
                                     <i class="fas fa-cogs me-1"></i>Admin
                                 </a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" asp-area="" asp-controller="Category" asp-action="Index">
+                                    <i class="fas fa-tags me-1"></i>Categories
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" asp-area="" asp-controller="Product" asp-action="Index">
+                                    <i class="fas fa-boxes me-1"></i>Products
+                                </a>
+                            </li>
                         }
                     </ul>
+                    
+                    <div class="d-flex align-items-center me-3">
+                        <a asp-controller="Cart" asp-action="Index" class="text-light position-relative">
+                            <i class="fas fa-shopping-cart fs-5"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-count">
+                                0
+                                <span class="visually-hidden">items in cart</span>
+                            </span>
+                        </a>
+                    </div>
+                    
                     <partial name="_LoginPartial" />
                 </div>
             </div>

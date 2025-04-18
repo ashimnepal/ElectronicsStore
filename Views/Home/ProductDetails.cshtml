@@ -1,0 +1,203 @@
+@model ElectronicsStore.Models.Product
+
+@{
+    ViewData["Title"] = Model.Name;
+    var relatedProducts = (List<ElectronicsStore.Models.Product>)ViewData["RelatedProducts"];
+}
+
+<div class="container py-5">
+    <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+            <li class="breadcrumb-item"><a href="/Home/CategoryProducts?categoryId=@Model.CategoryId">@Model.Category?.Name</a></li>
+            <li class="breadcrumb-item active" aria-current="page">@Model.Name</li>
+        </ol>
+    </nav>
+
+    <div class="row">
+        <!-- Product Image -->
+        <div class="col-md-5 mb-4">
+            <div class="card shadow-sm">
+                <div class="text-center p-4">
+                    <img src="@Model.ImageUrl" class="img-fluid product-image" alt="@Model.Name"
+                        onerror="this.onerror=null; this.src='/images/products/default-product.jpg';" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Details -->
+        <div class="col-md-7">
+            <h1 class="mb-2">@Model.Name</h1>
+            <div class="mb-3">
+                <span class="badge bg-info">@Model.Category?.Name</span>
+                @if (Model.IsAvailable && Model.StockQuantity > 0)
+                {
+                    <span class="badge bg-success ms-2">In Stock (@Model.StockQuantity available)</span>
+                }
+                else
+                {
+                    <span class="badge bg-danger ms-2">Out of Stock</span>
+                }
+            </div>
+
+            <h2 class="text-primary mb-4">@Model.Price.ToString("C")</h2>
+
+            <div class="mb-4">
+                <h5>Description</h5>
+                <p>@Model.Description</p>
+            </div>
+
+            <div class="d-flex gap-2 mb-4">
+                <div class="input-group" style="width: 140px;">
+                    <button class="btn btn-outline-secondary quantity-btn" data-action="decrease">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                    <input type="number" class="form-control text-center quantity-input" value="1" min="1" max="@Model.StockQuantity">
+                    <button class="btn btn-outline-secondary quantity-btn" data-action="increase">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+
+                @if (Model.IsAvailable && Model.StockQuantity > 0)
+                {
+                    <button class="btn btn-primary add-to-cart-btn" data-id="@Model.Id">
+                        <i class="fas fa-cart-plus me-2"></i>Add to Cart
+                    </button>
+                }
+                else
+                {
+                    <button class="btn btn-secondary" disabled>
+                        <i class="fas fa-cart-plus me-2"></i>Add to Cart
+                    </button>
+                }
+            </div>
+
+            <div class="card shadow-sm p-3 mb-4">
+                <div class="d-flex gap-3">
+                    <div>
+                        <i class="fas fa-truck fs-2 text-primary"></i>
+                    </div>
+                    <div>
+                        <h6 class="mb-1">Free Shipping</h6>
+                        <p class="text-muted mb-0">On orders over $50</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card shadow-sm p-3">
+                <div class="d-flex gap-3">
+                    <div>
+                        <i class="fas fa-undo fs-2 text-primary"></i>
+                    </div>
+                    <div>
+                        <h6 class="mb-1">30 Days Return Policy</h6>
+                        <p class="text-muted mb-0">Money back guarantee</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Related Products -->
+    @if (relatedProducts != null && relatedProducts.Any())
+    {
+        <div class="mt-5">
+            <h3 class="mb-4">Related Products</h3>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                @foreach (var relatedProduct in relatedProducts)
+                {
+                    <div class="col">
+                        <div class="card h-100 product-card shadow-sm">
+                            <div class="card-img-top-container">
+                                <img src="@relatedProduct.ImageUrl" class="card-img-top" alt="@relatedProduct.Name"
+                                    onerror="this.onerror=null; this.src='/images/products/default-product.jpg';">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">@relatedProduct.Name</h5>
+                                <p class="text-primary fw-bold">@relatedProduct.Price.ToString("C")</p>
+                                <a asp-controller="Home" asp-action="ProductDetails" asp-route-id="@relatedProduct.Id" 
+                                    class="btn btn-sm btn-outline-primary w-100">
+                                    <i class="fas fa-eye me-1"></i> View Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    }
+</div>
+
+@section Styles {
+    <style>
+        .product-image {
+            max-height: 400px;
+            object-fit: contain;
+        }
+        
+        .card-img-top-container {
+            height: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            padding: 15px;
+        }
+        
+        .card-img-top {
+            max-height: 100%;
+            object-fit: contain;
+        }
+        
+        .product-card {
+            transition: transform 0.3s;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .quantity-input {
+            border-left: 0;
+            border-right: 0;
+        }
+        
+        .quantity-input::-webkit-inner-spin-button, 
+        .quantity-input::-webkit-outer-spin-button { 
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
+}
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            // Quantity buttons
+            $('.quantity-btn').click(function() {
+                const input = $('.quantity-input');
+                const currentValue = parseInt(input.val());
+                const maxValue = parseInt(input.attr('max'));
+                
+                if ($(this).data('action') === 'increase') {
+                    if (currentValue < maxValue) {
+                        input.val(currentValue + 1);
+                    }
+                } else {
+                    if (currentValue > 1) {
+                        input.val(currentValue - 1);
+                    }
+                }
+            });
+            
+            // Add to cart
+            $('.add-to-cart-btn').click(function() {
+                const productId = $(this).data('id');
+                const quantity = $('.quantity-input').val();
+                
+                // This will be implemented later with the cart functionality
+                alert(`Added ${quantity} item(s) to cart! (Product ID: ${productId})`);
+            });
+        });
+    </script>
+} 

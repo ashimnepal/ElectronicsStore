@@ -194,3 +194,4 @@ C:\Users\ashim\OneDrive\Desktop\grpproject\ElectronicsStore\obj\Debug\net9.0\ref
 C:\Users\ashim\OneDrive\Desktop\grpproject\ElectronicsStore\obj\Debug\net9.0\ElectronicsStore.pdb
 C:\Users\ashim\OneDrive\Desktop\grpproject\ElectronicsStore\obj\Debug\net9.0\ElectronicsStore.genruntimeconfig.cache
 C:\Users\ashim\OneDrive\Desktop\grpproject\ElectronicsStore\obj\Debug\net9.0\ref\ElectronicsStore.dll
+C:\Users\ashim\OneDrive\Desktop\grpproject\ElectronicsStore\obj\Debug\net9.0\ElectronicsStore.sourcelink.json

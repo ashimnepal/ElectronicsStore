@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\90d7de01-f65f-40c1-af6a-d75be240a9cd_xiaominote11s.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\90d7de01-f65f-40c1-af6a-d75be240a9cd_xiaominote11s.jpg"
+    },
+    {
       "Id": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yYwhUkU8NnM+MuRNlz7YBNjkTrYwQhvH4FlxOpHr9ks=",
+  "Hash": "q/lFjC7rsmtYQHbwoEhWPYTvsHQKwXBPtgOji4Bzfaw=",
   "Source": "ElectronicsStore",
   "BasePath": "_content/ElectronicsStore",
   "Mode": "Default",
@@ -1443,6 +1443,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\90d7de01-f65f-40c1-af6a-d75be240a9cd_xiaominote11s.jpg",
+      "SourceId": "ElectronicsStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\",
+      "BasePath": "_content/ElectronicsStore",
+      "RelativePath": "images/products/90d7de01-f65f-40c1-af6a-d75be240a9cd_xiaominote11s#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dhuc7ad7ck",
+      "Integrity": "r3tFdnV9hOTRoQebkYtbWM6Z6lBELL6YOZQ5xkpl+Y0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\90d7de01-f65f-40c1-af6a-d75be240a9cd_xiaominote11s.jpg"
     },
     {
       "Identity": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\js\\site.js",
@@ -3916,6 +3937,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-wfFuuYm+Lh6RbCeeiUqxw334b/hIOkp5j9eokGUM1Y0="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/90d7de01-f65f-40c1-af6a-d75be240a9cd_xiaominote11s.dhuc7ad7ck.jpg",
+      "AssetFile": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\90d7de01-f65f-40c1-af6a-d75be240a9cd_xiaominote11s.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "476027"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"r3tFdnV9hOTRoQebkYtbWM6Z6lBELL6YOZQ5xkpl+Y0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 16:44:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dhuc7ad7ck"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/90d7de01-f65f-40c1-af6a-d75be240a9cd_xiaominote11s.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-r3tFdnV9hOTRoQebkYtbWM6Z6lBELL6YOZQ5xkpl+Y0="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/90d7de01-f65f-40c1-af6a-d75be240a9cd_xiaominote11s.jpg",
+      "AssetFile": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\90d7de01-f65f-40c1-af6a-d75be240a9cd_xiaominote11s.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "476027"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"r3tFdnV9hOTRoQebkYtbWM6Z6lBELL6YOZQ5xkpl+Y0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 16:44:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-r3tFdnV9hOTRoQebkYtbWM6Z6lBELL6YOZQ5xkpl+Y0="
         }
       ]
     },

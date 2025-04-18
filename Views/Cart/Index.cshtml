@@ -1,0 +1,231 @@
+@model IEnumerable<ElectronicsStore.Models.CartItem>
+
+@{
+    ViewData["Title"] = "Shopping Cart";
+    var cartTotal = (decimal)ViewData["CartTotal"];
+}
+
+<div class="container py-5">
+    <h1 class="mb-4">Shopping Cart</h1>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">
+            <i class="fas fa-shopping-cart me-2"></i> Your cart is empty.
+            <a asp-controller="Home" asp-action="Index" class="alert-link">Continue shopping</a>
+        </div>
+    }
+    else
+    {
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Product</th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">Quantity</th>
+                                        <th scope="col">Total</th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr data-id="@item.Id">
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="@item.Product.ImageUrl" alt="@item.Product.Name" 
+                                                         class="img-thumbnail me-3" style="width: 60px; height: 60px; object-fit: contain;"
+                                                         onerror="this.onerror=null; this.src='/images/products/default-product.jpg';">
+                                                    <div>
+                                                        <h6 class="mb-1">@item.Product.Name</h6>
+                                                        <small class="text-muted">@item.Product.Category?.Name</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>@item.Product.Price.ToString("C")</td>
+                                            <td>
+                                                <div class="input-group input-group-sm" style="width: 120px;">
+                                                    <button class="btn btn-outline-secondary quantity-btn" data-action="decrease" data-id="@item.Id">
+                                                        <i class="fas fa-minus"></i>
+                                                    </button>
+                                                    <input type="number" class="form-control text-center quantity-input" value="@item.Quantity" 
+                                                           min="1" data-id="@item.Id" data-price="@item.Product.Price">
+                                                    <button class="btn btn-outline-secondary quantity-btn" data-action="increase" data-id="@item.Id">
+                                                        <i class="fas fa-plus"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                            <td class="item-total" data-id="@item.Id">@((item.Product.Price * item.Quantity).ToString("C"))</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-danger remove-item" data-id="@item.Id">
+                                                    <i class="fas fa-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <a asp-controller="Home" asp-action="Index" class="btn btn-outline-primary">
+                        <i class="fas fa-arrow-left me-2"></i>Continue Shopping
+                    </a>
+                    <button id="clear-cart" class="btn btn-outline-danger">
+                        <i class="fas fa-trash me-2"></i>Clear Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0">Order Summary</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between mb-3">
+                            <span>Subtotal:</span>
+                            <span id="cart-subtotal">@cartTotal.ToString("C")</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                            <span>Shipping:</span>
+                            <span>Free</span>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between mb-4">
+                            <strong>Total:</strong>
+                            <strong id="cart-total">@cartTotal.ToString("C")</strong>
+                        </div>
+                        <a href="#" class="btn btn-success btn-lg w-100">
+                            <i class="fas fa-lock me-2"></i>Proceed to Checkout
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            // Handle quantity input changes
+            $('.quantity-input').change(function() {
+                const cartItemId = $(this).data('id');
+                const quantity = parseInt($(this).val());
+                
+                if (quantity < 1) {
+                    $(this).val(1);
+                    return;
+                }
+                
+                updateCartItemQuantity(cartItemId, quantity);
+            });
+            
+            // Handle quantity buttons
+            $('.quantity-btn').click(function() {
+                const cartItemId = $(this).data('id');
+                const input = $(`.quantity-input[data-id="${cartItemId}"]`);
+                const currentValue = parseInt(input.val());
+                
+                if ($(this).data('action') === 'increase') {
+                    input.val(currentValue + 1);
+                } else {
+                    if (currentValue > 1) {
+                        input.val(currentValue - 1);
+                    } else {
+                        return;
+                    }
+                }
+                
+                updateCartItemQuantity(cartItemId, parseInt(input.val()));
+            });
+            
+            // Handle remove item button
+            $('.remove-item').click(function() {
+                const cartItemId = $(this).data('id');
+                removeCartItem(cartItemId);
+            });
+            
+            // Handle clear cart button
+            $('#clear-cart').click(function() {
+                if (confirm('Are you sure you want to clear your cart?')) {
+                    clearCart();
+                }
+            });
+            
+            // Function to update cart item quantity
+            function updateCartItemQuantity(cartItemId, quantity) {
+                $.ajax({
+                    url: '@Url.Action("UpdateQuantity", "Cart")',
+                    type: 'POST',
+                    data: { cartItemId: cartItemId, quantity: quantity },
+                    headers: {
+                        'X-Requested-With': 'XMLHttpRequest'
+                    },
+                    success: function(response) {
+                        if (response.success) {
+                            $(`.item-total[data-id="${cartItemId}"]`).text('$' + response.itemTotal.toFixed(2));
+                            $('#cart-subtotal').text('$' + response.cartTotal.toFixed(2));
+                            $('#cart-total').text('$' + response.cartTotal.toFixed(2));
+                            updateCartCount(response.cartCount);
+                        }
+                    }
+                });
+            }
+            
+            // Function to remove cart item
+            function removeCartItem(cartItemId) {
+                $.ajax({
+                    url: '@Url.Action("RemoveItem", "Cart")',
+                    type: 'POST',
+                    data: { cartItemId: cartItemId },
+                    headers: {
+                        'X-Requested-With': 'XMLHttpRequest'
+                    },
+                    success: function(response) {
+                        if (response.success) {
+                            $(`tr[data-id="${cartItemId}"]`).remove();
+                            $('#cart-subtotal').text('$' + response.cartTotal.toFixed(2));
+                            $('#cart-total').text('$' + response.cartTotal.toFixed(2));
+                            updateCartCount(response.cartCount);
+                            
+                            // If cart is empty, refresh the page
+                            if (response.cartCount === 0) {
+                                location.reload();
+                            }
+                        }
+                    }
+                });
+            }
+            
+            // Function to clear cart
+            function clearCart() {
+                $.ajax({
+                    url: '@Url.Action("Clear", "Cart")',
+                    type: 'POST',
+                    headers: {
+                        'X-Requested-With': 'XMLHttpRequest'
+                    },
+                    success: function(response) {
+                        if (response.success) {
+                            location.reload();
+                        }
+                    }
+                });
+            }
+            
+            // Function to update cart count in navbar
+            function updateCartCount(count) {
+                $('.cart-count').text(count);
+            }
+        });
+    </script>
+} 
