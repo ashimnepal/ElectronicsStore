@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "q/lFjC7rsmtYQHbwoEhWPYTvsHQKwXBPtgOji4Bzfaw=",
+  "Hash": "2ekPcucs3Ubj07kDdS7Tanl5kuY6RyywYLRsyVTwIok=",
   "Source": "ElectronicsStore",
   "BasePath": "_content/ElectronicsStore",
   "Mode": "Default",
@@ -773,12 +773,12 @@
       "OriginalItemSpec": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\ElectronicsStore.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\obj\\Debug\\net9.0\\compressed\\kiz517djg4-b9sayid5wm.gz",
+      "Identity": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\obj\\Debug\\net9.0\\compressed\\kiz517djg4-4rql6rvw6y.gz",
       "SourceId": "ElectronicsStore",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/ElectronicsStore",
-      "RelativePath": "css/site#[.{fingerprint=b9sayid5wm}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=4rql6rvw6y}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -787,8 +787,8 @@
       "RelatedAsset": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\css\\site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "0suozzrugb",
-      "Integrity": "0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y=",
+      "Fingerprint": "kpr6dlo0mi",
+      "Integrity": "yPJ4I1ix2B0LU0RKF2MlX0C/xXgeW4jMz71YhAdNTUA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\css\\site.css"
@@ -1417,8 +1417,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "b9sayid5wm",
-      "Integrity": "j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=",
+      "Fingerprint": "4rql6rvw6y",
+      "Integrity": "UIMOlNMp/eLq+hpVS6mr9fk1tnxoeVgGGcoHVVGjCY8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -1445,6 +1445,216 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\074b4599-0a60-464c-873a-00f1c42153a6_z30.jpg",
+      "SourceId": "ElectronicsStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\",
+      "BasePath": "_content/ElectronicsStore",
+      "RelativePath": "images/products/074b4599-0a60-464c-873a-00f1c42153a6_z30#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0ewr05el39",
+      "Integrity": "uDBO7vo5VEdbceXkwbW1HJqIOwsgE3gK3eimZtb2ulo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\074b4599-0a60-464c-873a-00f1c42153a6_z30.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\0df4d389-2027-4c4c-a0bd-6c1a9d99e224_xiaominote11s.jpg",
+      "SourceId": "ElectronicsStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\",
+      "BasePath": "_content/ElectronicsStore",
+      "RelativePath": "images/products/0df4d389-2027-4c4c-a0bd-6c1a9d99e224_xiaominote11s#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dhuc7ad7ck",
+      "Integrity": "r3tFdnV9hOTRoQebkYtbWM6Z6lBELL6YOZQ5xkpl+Y0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\0df4d389-2027-4c4c-a0bd-6c1a9d99e224_xiaominote11s.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\25cbde10-6e3f-4d0f-ab70-b96bbc2a27b2_Skullcandy.jpg",
+      "SourceId": "ElectronicsStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\",
+      "BasePath": "_content/ElectronicsStore",
+      "RelativePath": "images/products/25cbde10-6e3f-4d0f-ab70-b96bbc2a27b2_Skullcandy#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "x3h9oemvxb",
+      "Integrity": "3e4kxsJFiosnJicNRGXW2BunToAA825rTaGbvmT4yPY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\25cbde10-6e3f-4d0f-ab70-b96bbc2a27b2_Skullcandy.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\33a62c6d-8d9a-4d95-a0ae-3c3de715d8b0_xiaomipad4.jpg",
+      "SourceId": "ElectronicsStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\",
+      "BasePath": "_content/ElectronicsStore",
+      "RelativePath": "images/products/33a62c6d-8d9a-4d95-a0ae-3c3de715d8b0_xiaomipad4#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ulami6a402",
+      "Integrity": "Mqk0CLjJjzU3hnjaWNbqS59apeQBoFw8w295E4GJIsg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\33a62c6d-8d9a-4d95-a0ae-3c3de715d8b0_xiaomipad4.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\3dd3dd47-77ab-4cbb-92ec-fe04fa114ced_macbookair.jpg",
+      "SourceId": "ElectronicsStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\",
+      "BasePath": "_content/ElectronicsStore",
+      "RelativePath": "images/products/3dd3dd47-77ab-4cbb-92ec-fe04fa114ced_macbookair#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dq23lu01sw",
+      "Integrity": "ld2lMAmOUOlMnJEA1awIRSIdNvyhemRK/q6qxKhnbz8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\3dd3dd47-77ab-4cbb-92ec-fe04fa114ced_macbookair.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\49317b9c-b327-4b3d-8ff7-c8ced8da849b_ipadair4.png",
+      "SourceId": "ElectronicsStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\",
+      "BasePath": "_content/ElectronicsStore",
+      "RelativePath": "images/products/49317b9c-b327-4b3d-8ff7-c8ced8da849b_ipadair4#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "da3tz14kgq",
+      "Integrity": "5ZyxXn4P0xQvxh2oXLAl2v7kbnoXB1tX+0mjSnxOIvE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\49317b9c-b327-4b3d-8ff7-c8ced8da849b_ipadair4.png"
+    },
+    {
+      "Identity": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\4961fa63-6007-4a64-9447-ed6f40b60109_samsungs25ultra.jpg",
+      "SourceId": "ElectronicsStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\",
+      "BasePath": "_content/ElectronicsStore",
+      "RelativePath": "images/products/4961fa63-6007-4a64-9447-ed6f40b60109_samsungs25ultra#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5tfq12ckby",
+      "Integrity": "iXs2dkybS2d567/C4U/ECg8XhCbEudxnVUORLH0vJ0c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\4961fa63-6007-4a64-9447-ed6f40b60109_samsungs25ultra.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\69046581-c0af-4792-aae1-7e035dee6b96_og-airpods-max-202409.jpg",
+      "SourceId": "ElectronicsStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\",
+      "BasePath": "_content/ElectronicsStore",
+      "RelativePath": "images/products/69046581-c0af-4792-aae1-7e035dee6b96_og-airpods-max-202409#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "052xr5oj3p",
+      "Integrity": "7Adw13oJExKXmrgAUnoigx4g6WperPrOtvFYRMB2md0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\69046581-c0af-4792-aae1-7e035dee6b96_og-airpods-max-202409.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\78f24e88-fd34-4567-91ce-037a6ee328a7_dellg33590.jpg",
+      "SourceId": "ElectronicsStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\",
+      "BasePath": "_content/ElectronicsStore",
+      "RelativePath": "images/products/78f24e88-fd34-4567-91ce-037a6ee328a7_dellg33590#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dorlbyt7pm",
+      "Integrity": "XcIM7Dw180FcCPdXrM0Jb9P96dQSMUGD4gFczP5YbFw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\78f24e88-fd34-4567-91ce-037a6ee328a7_dellg33590.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\841ffc5c-a978-4892-a08a-383b959f9537_google home.jpg",
+      "SourceId": "ElectronicsStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\",
+      "BasePath": "_content/ElectronicsStore",
+      "RelativePath": "images/products/841ffc5c-a978-4892-a08a-383b959f9537_google home#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5mm0qrt2u4",
+      "Integrity": "g5dWu7YLO33eaVhtEZIL8n02Bk3Ne5kP+d3/GaRh2Vo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\841ffc5c-a978-4892-a08a-383b959f9537_google home.jpg"
+    },
+    {
       "Identity": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\90d7de01-f65f-40c1-af6a-d75be240a9cd_xiaominote11s.jpg",
       "SourceId": "ElectronicsStore",
       "SourceType": "Discovered",
@@ -1464,6 +1674,90 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\products\\90d7de01-f65f-40c1-af6a-d75be240a9cd_xiaominote11s.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\9e3f0478-8b65-46b5-8a72-9a809fa18ce6_Iphone17.jpg",
+      "SourceId": "ElectronicsStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\",
+      "BasePath": "_content/ElectronicsStore",
+      "RelativePath": "images/products/9e3f0478-8b65-46b5-8a72-9a809fa18ce6_Iphone17#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8tmwn3ey6z",
+      "Integrity": "fP6d4iFRgAJZY4kQnJ3UJJsF3Wx1HKIXRs1SjdB0xwM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\9e3f0478-8b65-46b5-8a72-9a809fa18ce6_Iphone17.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\bcda152c-cb54-498c-a947-5e7b6a774205_camera.jpg",
+      "SourceId": "ElectronicsStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\",
+      "BasePath": "_content/ElectronicsStore",
+      "RelativePath": "images/products/bcda152c-cb54-498c-a947-5e7b6a774205_camera#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pror8gfgrn",
+      "Integrity": "Je7nLOrvU9pUocWc07BdNuqkTsBuJSX6UvSqvZxi8sQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\bcda152c-cb54-498c-a947-5e7b6a774205_camera.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\ebd6bbb6-c174-4ff9-8667-997f8610d3ad_Iphone17.jpg",
+      "SourceId": "ElectronicsStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\",
+      "BasePath": "_content/ElectronicsStore",
+      "RelativePath": "images/products/ebd6bbb6-c174-4ff9-8667-997f8610d3ad_Iphone17#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8tmwn3ey6z",
+      "Integrity": "fP6d4iFRgAJZY4kQnJ3UJJsF3Wx1HKIXRs1SjdB0xwM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\ebd6bbb6-c174-4ff9-8667-997f8610d3ad_Iphone17.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\fdf5d6de-b059-478c-8770-46cd854efa63_alexa.jpg",
+      "SourceId": "ElectronicsStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\",
+      "BasePath": "_content/ElectronicsStore",
+      "RelativePath": "images/products/fdf5d6de-b059-478c-8770-46cd854efa63_alexa#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "anytcvwefz",
+      "Integrity": "WsMYTqb7hvGZvblMnb1cwBXqOSi4RD6F4VGU/DPDtYs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\fdf5d6de-b059-478c-8770-46cd854efa63_alexa.jpg"
     },
     {
       "Identity": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\js\\site.js",
@@ -2749,13 +3043,13 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/site.b9sayid5wm.css",
-      "AssetFile": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\obj\\Debug\\net9.0\\compressed\\kiz517djg4-b9sayid5wm.gz",
+      "Route": "css/site.4rql6rvw6y.css",
+      "AssetFile": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\obj\\Debug\\net9.0\\compressed\\kiz517djg4-4rql6rvw6y.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.003134796238"
+          "Quality": "0.001443001443"
         }
       ],
       "ResponseHeaders": [
@@ -2765,15 +3059,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "318"
+          "Value": "692"
         },
         {
           "Name": "ETag",
-          "Value": "\"0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y=\""
+          "Value": "\"yPJ4I1ix2B0LU0RKF2MlX0C/xXgeW4jMz71YhAdNTUA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 18 Apr 2025 01:35:18 GMT"
+          "Value": "Fri, 18 Apr 2025 18:34:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2793,13 +3087,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "W/\"UIMOlNMp/eLq+hpVS6mr9fk1tnxoeVgGGcoHVVGjCY8=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b9sayid5wm"
+          "Value": "4rql6rvw6y"
         },
         {
           "Name": "label",
@@ -2807,12 +3101,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-UIMOlNMp/eLq+hpVS6mr9fk1tnxoeVgGGcoHVVGjCY8="
         }
       ]
     },
     {
-      "Route": "css/site.b9sayid5wm.css",
+      "Route": "css/site.4rql6rvw6y.css",
       "AssetFile": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2822,7 +3116,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "667"
+          "Value": "1940"
         },
         {
           "Name": "Content-Type",
@@ -2830,11 +3124,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "\"UIMOlNMp/eLq+hpVS6mr9fk1tnxoeVgGGcoHVVGjCY8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 18 Apr 2025 01:35:18 GMT"
+          "Value": "Fri, 18 Apr 2025 18:34:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2844,7 +3138,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b9sayid5wm"
+          "Value": "4rql6rvw6y"
         },
         {
           "Name": "label",
@@ -2852,13 +3146,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-UIMOlNMp/eLq+hpVS6mr9fk1tnxoeVgGGcoHVVGjCY8="
         }
       ]
     },
     {
-      "Route": "css/site.b9sayid5wm.css.gz",
-      "AssetFile": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\obj\\Debug\\net9.0\\compressed\\kiz517djg4-b9sayid5wm.gz",
+      "Route": "css/site.4rql6rvw6y.css.gz",
+      "AssetFile": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\obj\\Debug\\net9.0\\compressed\\kiz517djg4-4rql6rvw6y.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2867,7 +3161,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "318"
+          "Value": "692"
         },
         {
           "Name": "Content-Type",
@@ -2875,11 +3169,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y=\""
+          "Value": "\"yPJ4I1ix2B0LU0RKF2MlX0C/xXgeW4jMz71YhAdNTUA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 18 Apr 2025 01:35:18 GMT"
+          "Value": "Fri, 18 Apr 2025 18:34:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2897,7 +3191,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b9sayid5wm"
+          "Value": "4rql6rvw6y"
         },
         {
           "Name": "label",
@@ -2905,18 +3199,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y="
+          "Value": "sha256-yPJ4I1ix2B0LU0RKF2MlX0C/xXgeW4jMz71YhAdNTUA="
         }
       ]
     },
     {
       "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\obj\\Debug\\net9.0\\compressed\\kiz517djg4-b9sayid5wm.gz",
+      "AssetFile": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\obj\\Debug\\net9.0\\compressed\\kiz517djg4-4rql6rvw6y.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.003134796238"
+          "Quality": "0.001443001443"
         }
       ],
       "ResponseHeaders": [
@@ -2926,15 +3220,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "318"
+          "Value": "692"
         },
         {
           "Name": "ETag",
-          "Value": "\"0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y=\""
+          "Value": "\"yPJ4I1ix2B0LU0RKF2MlX0C/xXgeW4jMz71YhAdNTUA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 18 Apr 2025 01:35:18 GMT"
+          "Value": "Fri, 18 Apr 2025 18:34:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2954,13 +3248,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "W/\"UIMOlNMp/eLq+hpVS6mr9fk1tnxoeVgGGcoHVVGjCY8=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-UIMOlNMp/eLq+hpVS6mr9fk1tnxoeVgGGcoHVVGjCY8="
         }
       ]
     },
@@ -2975,7 +3269,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "667"
+          "Value": "1940"
         },
         {
           "Name": "Content-Type",
@@ -2983,11 +3277,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "\"UIMOlNMp/eLq+hpVS6mr9fk1tnxoeVgGGcoHVVGjCY8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 18 Apr 2025 01:35:18 GMT"
+          "Value": "Fri, 18 Apr 2025 18:34:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2997,13 +3291,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-UIMOlNMp/eLq+hpVS6mr9fk1tnxoeVgGGcoHVVGjCY8="
         }
       ]
     },
     {
       "Route": "css/site.css.gz",
-      "AssetFile": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\obj\\Debug\\net9.0\\compressed\\kiz517djg4-b9sayid5wm.gz",
+      "AssetFile": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\obj\\Debug\\net9.0\\compressed\\kiz517djg4-4rql6rvw6y.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3012,7 +3306,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "318"
+          "Value": "692"
         },
         {
           "Name": "Content-Type",
@@ -3020,11 +3314,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y=\""
+          "Value": "\"yPJ4I1ix2B0LU0RKF2MlX0C/xXgeW4jMz71YhAdNTUA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 18 Apr 2025 01:35:18 GMT"
+          "Value": "Fri, 18 Apr 2025 18:34:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3042,7 +3336,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y="
+          "Value": "sha256-yPJ4I1ix2B0LU0RKF2MlX0C/xXgeW4jMz71YhAdNTUA="
         }
       ]
     },
@@ -3941,6 +4235,826 @@
       ]
     },
     {
+      "Route": "images/products/074b4599-0a60-464c-873a-00f1c42153a6_z30.0ewr05el39.jpg",
+      "AssetFile": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\074b4599-0a60-464c-873a-00f1c42153a6_z30.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "42442"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uDBO7vo5VEdbceXkwbW1HJqIOwsgE3gK3eimZtb2ulo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 18:21:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0ewr05el39"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/074b4599-0a60-464c-873a-00f1c42153a6_z30.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-uDBO7vo5VEdbceXkwbW1HJqIOwsgE3gK3eimZtb2ulo="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/074b4599-0a60-464c-873a-00f1c42153a6_z30.jpg",
+      "AssetFile": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\074b4599-0a60-464c-873a-00f1c42153a6_z30.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "42442"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uDBO7vo5VEdbceXkwbW1HJqIOwsgE3gK3eimZtb2ulo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 18:21:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uDBO7vo5VEdbceXkwbW1HJqIOwsgE3gK3eimZtb2ulo="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/0df4d389-2027-4c4c-a0bd-6c1a9d99e224_xiaominote11s.dhuc7ad7ck.jpg",
+      "AssetFile": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\0df4d389-2027-4c4c-a0bd-6c1a9d99e224_xiaominote11s.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "476027"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"r3tFdnV9hOTRoQebkYtbWM6Z6lBELL6YOZQ5xkpl+Y0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 18:26:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dhuc7ad7ck"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/0df4d389-2027-4c4c-a0bd-6c1a9d99e224_xiaominote11s.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-r3tFdnV9hOTRoQebkYtbWM6Z6lBELL6YOZQ5xkpl+Y0="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/0df4d389-2027-4c4c-a0bd-6c1a9d99e224_xiaominote11s.jpg",
+      "AssetFile": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\0df4d389-2027-4c4c-a0bd-6c1a9d99e224_xiaominote11s.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "476027"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"r3tFdnV9hOTRoQebkYtbWM6Z6lBELL6YOZQ5xkpl+Y0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 18:26:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-r3tFdnV9hOTRoQebkYtbWM6Z6lBELL6YOZQ5xkpl+Y0="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/25cbde10-6e3f-4d0f-ab70-b96bbc2a27b2_Skullcandy.jpg",
+      "AssetFile": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\25cbde10-6e3f-4d0f-ab70-b96bbc2a27b2_Skullcandy.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25155"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3e4kxsJFiosnJicNRGXW2BunToAA825rTaGbvmT4yPY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 18:17:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3e4kxsJFiosnJicNRGXW2BunToAA825rTaGbvmT4yPY="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/25cbde10-6e3f-4d0f-ab70-b96bbc2a27b2_Skullcandy.x3h9oemvxb.jpg",
+      "AssetFile": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\25cbde10-6e3f-4d0f-ab70-b96bbc2a27b2_Skullcandy.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25155"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3e4kxsJFiosnJicNRGXW2BunToAA825rTaGbvmT4yPY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 18:17:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "x3h9oemvxb"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/25cbde10-6e3f-4d0f-ab70-b96bbc2a27b2_Skullcandy.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3e4kxsJFiosnJicNRGXW2BunToAA825rTaGbvmT4yPY="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/33a62c6d-8d9a-4d95-a0ae-3c3de715d8b0_xiaomipad4.jpg",
+      "AssetFile": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\33a62c6d-8d9a-4d95-a0ae-3c3de715d8b0_xiaomipad4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "54342"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Mqk0CLjJjzU3hnjaWNbqS59apeQBoFw8w295E4GJIsg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 18:14:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mqk0CLjJjzU3hnjaWNbqS59apeQBoFw8w295E4GJIsg="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/33a62c6d-8d9a-4d95-a0ae-3c3de715d8b0_xiaomipad4.ulami6a402.jpg",
+      "AssetFile": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\33a62c6d-8d9a-4d95-a0ae-3c3de715d8b0_xiaomipad4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "54342"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Mqk0CLjJjzU3hnjaWNbqS59apeQBoFw8w295E4GJIsg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 18:14:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ulami6a402"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/33a62c6d-8d9a-4d95-a0ae-3c3de715d8b0_xiaomipad4.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Mqk0CLjJjzU3hnjaWNbqS59apeQBoFw8w295E4GJIsg="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/3dd3dd47-77ab-4cbb-92ec-fe04fa114ced_macbookair.dq23lu01sw.jpg",
+      "AssetFile": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\3dd3dd47-77ab-4cbb-92ec-fe04fa114ced_macbookair.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "152433"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ld2lMAmOUOlMnJEA1awIRSIdNvyhemRK/q6qxKhnbz8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 18:10:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dq23lu01sw"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/3dd3dd47-77ab-4cbb-92ec-fe04fa114ced_macbookair.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ld2lMAmOUOlMnJEA1awIRSIdNvyhemRK/q6qxKhnbz8="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/3dd3dd47-77ab-4cbb-92ec-fe04fa114ced_macbookair.jpg",
+      "AssetFile": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\3dd3dd47-77ab-4cbb-92ec-fe04fa114ced_macbookair.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "152433"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ld2lMAmOUOlMnJEA1awIRSIdNvyhemRK/q6qxKhnbz8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 18:10:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ld2lMAmOUOlMnJEA1awIRSIdNvyhemRK/q6qxKhnbz8="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/49317b9c-b327-4b3d-8ff7-c8ced8da849b_ipadair4.da3tz14kgq.png",
+      "AssetFile": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\49317b9c-b327-4b3d-8ff7-c8ced8da849b_ipadair4.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "960128"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5ZyxXn4P0xQvxh2oXLAl2v7kbnoXB1tX+0mjSnxOIvE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 18:15:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "da3tz14kgq"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/49317b9c-b327-4b3d-8ff7-c8ced8da849b_ipadair4.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5ZyxXn4P0xQvxh2oXLAl2v7kbnoXB1tX+0mjSnxOIvE="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/49317b9c-b327-4b3d-8ff7-c8ced8da849b_ipadair4.png",
+      "AssetFile": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\49317b9c-b327-4b3d-8ff7-c8ced8da849b_ipadair4.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "960128"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5ZyxXn4P0xQvxh2oXLAl2v7kbnoXB1tX+0mjSnxOIvE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 18:15:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5ZyxXn4P0xQvxh2oXLAl2v7kbnoXB1tX+0mjSnxOIvE="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/4961fa63-6007-4a64-9447-ed6f40b60109_samsungs25ultra.5tfq12ckby.jpg",
+      "AssetFile": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\4961fa63-6007-4a64-9447-ed6f40b60109_samsungs25ultra.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20972"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iXs2dkybS2d567/C4U/ECg8XhCbEudxnVUORLH0vJ0c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 18:08:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5tfq12ckby"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/4961fa63-6007-4a64-9447-ed6f40b60109_samsungs25ultra.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iXs2dkybS2d567/C4U/ECg8XhCbEudxnVUORLH0vJ0c="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/4961fa63-6007-4a64-9447-ed6f40b60109_samsungs25ultra.jpg",
+      "AssetFile": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\4961fa63-6007-4a64-9447-ed6f40b60109_samsungs25ultra.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20972"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iXs2dkybS2d567/C4U/ECg8XhCbEudxnVUORLH0vJ0c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 18:08:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iXs2dkybS2d567/C4U/ECg8XhCbEudxnVUORLH0vJ0c="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/69046581-c0af-4792-aae1-7e035dee6b96_og-airpods-max-202409.052xr5oj3p.jpg",
+      "AssetFile": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\69046581-c0af-4792-aae1-7e035dee6b96_og-airpods-max-202409.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "109014"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7Adw13oJExKXmrgAUnoigx4g6WperPrOtvFYRMB2md0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 18:19:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "052xr5oj3p"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/69046581-c0af-4792-aae1-7e035dee6b96_og-airpods-max-202409.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7Adw13oJExKXmrgAUnoigx4g6WperPrOtvFYRMB2md0="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/69046581-c0af-4792-aae1-7e035dee6b96_og-airpods-max-202409.jpg",
+      "AssetFile": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\69046581-c0af-4792-aae1-7e035dee6b96_og-airpods-max-202409.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "109014"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7Adw13oJExKXmrgAUnoigx4g6WperPrOtvFYRMB2md0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 18:19:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7Adw13oJExKXmrgAUnoigx4g6WperPrOtvFYRMB2md0="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/78f24e88-fd34-4567-91ce-037a6ee328a7_dellg33590.dorlbyt7pm.jpg",
+      "AssetFile": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\78f24e88-fd34-4567-91ce-037a6ee328a7_dellg33590.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "227090"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XcIM7Dw180FcCPdXrM0Jb9P96dQSMUGD4gFczP5YbFw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 18:12:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dorlbyt7pm"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/78f24e88-fd34-4567-91ce-037a6ee328a7_dellg33590.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XcIM7Dw180FcCPdXrM0Jb9P96dQSMUGD4gFczP5YbFw="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/78f24e88-fd34-4567-91ce-037a6ee328a7_dellg33590.jpg",
+      "AssetFile": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\78f24e88-fd34-4567-91ce-037a6ee328a7_dellg33590.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "227090"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XcIM7Dw180FcCPdXrM0Jb9P96dQSMUGD4gFczP5YbFw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 18:12:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XcIM7Dw180FcCPdXrM0Jb9P96dQSMUGD4gFczP5YbFw="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/841ffc5c-a978-4892-a08a-383b959f9537_google home.5mm0qrt2u4.jpg",
+      "AssetFile": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\841ffc5c-a978-4892-a08a-383b959f9537_google home.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "134503"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g5dWu7YLO33eaVhtEZIL8n02Bk3Ne5kP+d3/GaRh2Vo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 18:24:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5mm0qrt2u4"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/841ffc5c-a978-4892-a08a-383b959f9537_google home.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-g5dWu7YLO33eaVhtEZIL8n02Bk3Ne5kP+d3/GaRh2Vo="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/841ffc5c-a978-4892-a08a-383b959f9537_google home.jpg",
+      "AssetFile": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\841ffc5c-a978-4892-a08a-383b959f9537_google home.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "134503"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g5dWu7YLO33eaVhtEZIL8n02Bk3Ne5kP+d3/GaRh2Vo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 18:24:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-g5dWu7YLO33eaVhtEZIL8n02Bk3Ne5kP+d3/GaRh2Vo="
+        }
+      ]
+    },
+    {
       "Route": "images/products/90d7de01-f65f-40c1-af6a-d75be240a9cd_xiaominote11s.dhuc7ad7ck.jpg",
       "AssetFile": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\90d7de01-f65f-40c1-af6a-d75be240a9cd_xiaominote11s.jpg",
       "Selectors": [],
@@ -4019,6 +5133,334 @@
         {
           "Name": "integrity",
           "Value": "sha256-r3tFdnV9hOTRoQebkYtbWM6Z6lBELL6YOZQ5xkpl+Y0="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/9e3f0478-8b65-46b5-8a72-9a809fa18ce6_Iphone17.8tmwn3ey6z.jpg",
+      "AssetFile": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\9e3f0478-8b65-46b5-8a72-9a809fa18ce6_Iphone17.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "181992"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fP6d4iFRgAJZY4kQnJ3UJJsF3Wx1HKIXRs1SjdB0xwM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 18:06:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8tmwn3ey6z"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/9e3f0478-8b65-46b5-8a72-9a809fa18ce6_Iphone17.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fP6d4iFRgAJZY4kQnJ3UJJsF3Wx1HKIXRs1SjdB0xwM="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/9e3f0478-8b65-46b5-8a72-9a809fa18ce6_Iphone17.jpg",
+      "AssetFile": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\9e3f0478-8b65-46b5-8a72-9a809fa18ce6_Iphone17.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "181992"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fP6d4iFRgAJZY4kQnJ3UJJsF3Wx1HKIXRs1SjdB0xwM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 18:06:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fP6d4iFRgAJZY4kQnJ3UJJsF3Wx1HKIXRs1SjdB0xwM="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/bcda152c-cb54-498c-a947-5e7b6a774205_camera.jpg",
+      "AssetFile": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\bcda152c-cb54-498c-a947-5e7b6a774205_camera.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "57037"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Je7nLOrvU9pUocWc07BdNuqkTsBuJSX6UvSqvZxi8sQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 18:20:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Je7nLOrvU9pUocWc07BdNuqkTsBuJSX6UvSqvZxi8sQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/bcda152c-cb54-498c-a947-5e7b6a774205_camera.pror8gfgrn.jpg",
+      "AssetFile": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\bcda152c-cb54-498c-a947-5e7b6a774205_camera.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "57037"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Je7nLOrvU9pUocWc07BdNuqkTsBuJSX6UvSqvZxi8sQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 18:20:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pror8gfgrn"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/bcda152c-cb54-498c-a947-5e7b6a774205_camera.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Je7nLOrvU9pUocWc07BdNuqkTsBuJSX6UvSqvZxi8sQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/ebd6bbb6-c174-4ff9-8667-997f8610d3ad_Iphone17.8tmwn3ey6z.jpg",
+      "AssetFile": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\ebd6bbb6-c174-4ff9-8667-997f8610d3ad_Iphone17.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "181992"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fP6d4iFRgAJZY4kQnJ3UJJsF3Wx1HKIXRs1SjdB0xwM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 18:26:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8tmwn3ey6z"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/ebd6bbb6-c174-4ff9-8667-997f8610d3ad_Iphone17.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fP6d4iFRgAJZY4kQnJ3UJJsF3Wx1HKIXRs1SjdB0xwM="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/ebd6bbb6-c174-4ff9-8667-997f8610d3ad_Iphone17.jpg",
+      "AssetFile": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\ebd6bbb6-c174-4ff9-8667-997f8610d3ad_Iphone17.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "181992"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fP6d4iFRgAJZY4kQnJ3UJJsF3Wx1HKIXRs1SjdB0xwM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 18:26:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fP6d4iFRgAJZY4kQnJ3UJJsF3Wx1HKIXRs1SjdB0xwM="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/fdf5d6de-b059-478c-8770-46cd854efa63_alexa.anytcvwefz.jpg",
+      "AssetFile": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\fdf5d6de-b059-478c-8770-46cd854efa63_alexa.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56257"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WsMYTqb7hvGZvblMnb1cwBXqOSi4RD6F4VGU/DPDtYs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 18:25:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "anytcvwefz"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/fdf5d6de-b059-478c-8770-46cd854efa63_alexa.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WsMYTqb7hvGZvblMnb1cwBXqOSi4RD6F4VGU/DPDtYs="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/fdf5d6de-b059-478c-8770-46cd854efa63_alexa.jpg",
+      "AssetFile": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\fdf5d6de-b059-478c-8770-46cd854efa63_alexa.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56257"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WsMYTqb7hvGZvblMnb1cwBXqOSi4RD6F4VGU/DPDtYs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 18:25:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WsMYTqb7hvGZvblMnb1cwBXqOSi4RD6F4VGU/DPDtYs="
         }
       ]
     },

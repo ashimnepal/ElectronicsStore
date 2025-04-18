@@ -1,16 +1,16 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAssetEndpoint Include="_content/ElectronicsStore/css/site.b9sayid5wm.css">
+    <StaticWebAssetEndpoint Include="_content/ElectronicsStore/css/site.4rql6rvw6y.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"b9sayid5wm"},{"Name":"integrity","Value":"sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="},{"Name":"label","Value":"_content/ElectronicsStore/css/site.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"667"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Apr 2025 01:35:18 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"4rql6rvw6y"},{"Name":"integrity","Value":"sha256-UIMOlNMp/eLq\u002BhpVS6mr9fk1tnxoeVgGGcoHVVGjCY8="},{"Name":"label","Value":"_content/ElectronicsStore/css/site.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1940"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022UIMOlNMp/eLq\u002BhpVS6mr9fk1tnxoeVgGGcoHVVGjCY8=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Apr 2025 18:34:03 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/ElectronicsStore/css/site.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"667"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Apr 2025 01:35:18 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-UIMOlNMp/eLq\u002BhpVS6mr9fk1tnxoeVgGGcoHVVGjCY8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1940"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022UIMOlNMp/eLq\u002BhpVS6mr9fk1tnxoeVgGGcoHVVGjCY8=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Apr 2025 18:34:03 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/ElectronicsStore/ElectronicsStore.2dy2sjofai.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ElectronicsStore.2dy2sjofai.bundle.scp.css'))</AssetFile>
@@ -36,6 +36,126 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5430"},{"Name":"Content-Type","Value":"image/x-icon"},{"Name":"ETag","Value":"\u0022Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Apr 2025 01:35:18 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectronicsStore/images/products/074b4599-0a60-464c-873a-00f1c42153a6_z30.0ewr05el39.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\074b4599-0a60-464c-873a-00f1c42153a6_z30.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"0ewr05el39"},{"Name":"integrity","Value":"sha256-uDBO7vo5VEdbceXkwbW1HJqIOwsgE3gK3eimZtb2ulo="},{"Name":"label","Value":"_content/ElectronicsStore/images/products/074b4599-0a60-464c-873a-00f1c42153a6_z30.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"42442"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022uDBO7vo5VEdbceXkwbW1HJqIOwsgE3gK3eimZtb2ulo=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Apr 2025 18:21:53 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectronicsStore/images/products/074b4599-0a60-464c-873a-00f1c42153a6_z30.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\074b4599-0a60-464c-873a-00f1c42153a6_z30.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-uDBO7vo5VEdbceXkwbW1HJqIOwsgE3gK3eimZtb2ulo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"42442"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022uDBO7vo5VEdbceXkwbW1HJqIOwsgE3gK3eimZtb2ulo=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Apr 2025 18:21:53 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectronicsStore/images/products/0df4d389-2027-4c4c-a0bd-6c1a9d99e224_xiaominote11s.dhuc7ad7ck.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\0df4d389-2027-4c4c-a0bd-6c1a9d99e224_xiaominote11s.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"dhuc7ad7ck"},{"Name":"integrity","Value":"sha256-r3tFdnV9hOTRoQebkYtbWM6Z6lBELL6YOZQ5xkpl\u002BY0="},{"Name":"label","Value":"_content/ElectronicsStore/images/products/0df4d389-2027-4c4c-a0bd-6c1a9d99e224_xiaominote11s.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"476027"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022r3tFdnV9hOTRoQebkYtbWM6Z6lBELL6YOZQ5xkpl\u002BY0=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Apr 2025 18:26:04 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectronicsStore/images/products/0df4d389-2027-4c4c-a0bd-6c1a9d99e224_xiaominote11s.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\0df4d389-2027-4c4c-a0bd-6c1a9d99e224_xiaominote11s.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-r3tFdnV9hOTRoQebkYtbWM6Z6lBELL6YOZQ5xkpl\u002BY0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"476027"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022r3tFdnV9hOTRoQebkYtbWM6Z6lBELL6YOZQ5xkpl\u002BY0=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Apr 2025 18:26:04 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectronicsStore/images/products/25cbde10-6e3f-4d0f-ab70-b96bbc2a27b2_Skullcandy.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\25cbde10-6e3f-4d0f-ab70-b96bbc2a27b2_Skullcandy.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-3e4kxsJFiosnJicNRGXW2BunToAA825rTaGbvmT4yPY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"25155"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00223e4kxsJFiosnJicNRGXW2BunToAA825rTaGbvmT4yPY=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Apr 2025 18:17:49 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectronicsStore/images/products/25cbde10-6e3f-4d0f-ab70-b96bbc2a27b2_Skullcandy.x3h9oemvxb.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\25cbde10-6e3f-4d0f-ab70-b96bbc2a27b2_Skullcandy.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"x3h9oemvxb"},{"Name":"integrity","Value":"sha256-3e4kxsJFiosnJicNRGXW2BunToAA825rTaGbvmT4yPY="},{"Name":"label","Value":"_content/ElectronicsStore/images/products/25cbde10-6e3f-4d0f-ab70-b96bbc2a27b2_Skullcandy.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"25155"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00223e4kxsJFiosnJicNRGXW2BunToAA825rTaGbvmT4yPY=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Apr 2025 18:17:49 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectronicsStore/images/products/33a62c6d-8d9a-4d95-a0ae-3c3de715d8b0_xiaomipad4.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\33a62c6d-8d9a-4d95-a0ae-3c3de715d8b0_xiaomipad4.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Mqk0CLjJjzU3hnjaWNbqS59apeQBoFw8w295E4GJIsg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"54342"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022Mqk0CLjJjzU3hnjaWNbqS59apeQBoFw8w295E4GJIsg=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Apr 2025 18:14:07 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectronicsStore/images/products/33a62c6d-8d9a-4d95-a0ae-3c3de715d8b0_xiaomipad4.ulami6a402.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\33a62c6d-8d9a-4d95-a0ae-3c3de715d8b0_xiaomipad4.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ulami6a402"},{"Name":"integrity","Value":"sha256-Mqk0CLjJjzU3hnjaWNbqS59apeQBoFw8w295E4GJIsg="},{"Name":"label","Value":"_content/ElectronicsStore/images/products/33a62c6d-8d9a-4d95-a0ae-3c3de715d8b0_xiaomipad4.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"54342"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022Mqk0CLjJjzU3hnjaWNbqS59apeQBoFw8w295E4GJIsg=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Apr 2025 18:14:07 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectronicsStore/images/products/3dd3dd47-77ab-4cbb-92ec-fe04fa114ced_macbookair.dq23lu01sw.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\3dd3dd47-77ab-4cbb-92ec-fe04fa114ced_macbookair.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"dq23lu01sw"},{"Name":"integrity","Value":"sha256-ld2lMAmOUOlMnJEA1awIRSIdNvyhemRK/q6qxKhnbz8="},{"Name":"label","Value":"_content/ElectronicsStore/images/products/3dd3dd47-77ab-4cbb-92ec-fe04fa114ced_macbookair.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"152433"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022ld2lMAmOUOlMnJEA1awIRSIdNvyhemRK/q6qxKhnbz8=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Apr 2025 18:10:10 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectronicsStore/images/products/3dd3dd47-77ab-4cbb-92ec-fe04fa114ced_macbookair.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\3dd3dd47-77ab-4cbb-92ec-fe04fa114ced_macbookair.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ld2lMAmOUOlMnJEA1awIRSIdNvyhemRK/q6qxKhnbz8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"152433"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022ld2lMAmOUOlMnJEA1awIRSIdNvyhemRK/q6qxKhnbz8=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Apr 2025 18:10:10 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectronicsStore/images/products/49317b9c-b327-4b3d-8ff7-c8ced8da849b_ipadair4.da3tz14kgq.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\49317b9c-b327-4b3d-8ff7-c8ced8da849b_ipadair4.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"da3tz14kgq"},{"Name":"integrity","Value":"sha256-5ZyxXn4P0xQvxh2oXLAl2v7kbnoXB1tX\u002B0mjSnxOIvE="},{"Name":"label","Value":"_content/ElectronicsStore/images/products/49317b9c-b327-4b3d-8ff7-c8ced8da849b_ipadair4.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"960128"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00225ZyxXn4P0xQvxh2oXLAl2v7kbnoXB1tX\u002B0mjSnxOIvE=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Apr 2025 18:15:17 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectronicsStore/images/products/49317b9c-b327-4b3d-8ff7-c8ced8da849b_ipadair4.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\49317b9c-b327-4b3d-8ff7-c8ced8da849b_ipadair4.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-5ZyxXn4P0xQvxh2oXLAl2v7kbnoXB1tX\u002B0mjSnxOIvE="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"960128"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00225ZyxXn4P0xQvxh2oXLAl2v7kbnoXB1tX\u002B0mjSnxOIvE=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Apr 2025 18:15:17 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectronicsStore/images/products/4961fa63-6007-4a64-9447-ed6f40b60109_samsungs25ultra.5tfq12ckby.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\4961fa63-6007-4a64-9447-ed6f40b60109_samsungs25ultra.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"5tfq12ckby"},{"Name":"integrity","Value":"sha256-iXs2dkybS2d567/C4U/ECg8XhCbEudxnVUORLH0vJ0c="},{"Name":"label","Value":"_content/ElectronicsStore/images/products/4961fa63-6007-4a64-9447-ed6f40b60109_samsungs25ultra.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"20972"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022iXs2dkybS2d567/C4U/ECg8XhCbEudxnVUORLH0vJ0c=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Apr 2025 18:08:38 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectronicsStore/images/products/4961fa63-6007-4a64-9447-ed6f40b60109_samsungs25ultra.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\4961fa63-6007-4a64-9447-ed6f40b60109_samsungs25ultra.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-iXs2dkybS2d567/C4U/ECg8XhCbEudxnVUORLH0vJ0c="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"20972"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022iXs2dkybS2d567/C4U/ECg8XhCbEudxnVUORLH0vJ0c=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Apr 2025 18:08:38 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectronicsStore/images/products/69046581-c0af-4792-aae1-7e035dee6b96_og-airpods-max-202409.052xr5oj3p.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\69046581-c0af-4792-aae1-7e035dee6b96_og-airpods-max-202409.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"052xr5oj3p"},{"Name":"integrity","Value":"sha256-7Adw13oJExKXmrgAUnoigx4g6WperPrOtvFYRMB2md0="},{"Name":"label","Value":"_content/ElectronicsStore/images/products/69046581-c0af-4792-aae1-7e035dee6b96_og-airpods-max-202409.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"109014"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00227Adw13oJExKXmrgAUnoigx4g6WperPrOtvFYRMB2md0=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Apr 2025 18:19:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectronicsStore/images/products/69046581-c0af-4792-aae1-7e035dee6b96_og-airpods-max-202409.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\69046581-c0af-4792-aae1-7e035dee6b96_og-airpods-max-202409.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-7Adw13oJExKXmrgAUnoigx4g6WperPrOtvFYRMB2md0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"109014"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00227Adw13oJExKXmrgAUnoigx4g6WperPrOtvFYRMB2md0=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Apr 2025 18:19:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectronicsStore/images/products/78f24e88-fd34-4567-91ce-037a6ee328a7_dellg33590.dorlbyt7pm.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\78f24e88-fd34-4567-91ce-037a6ee328a7_dellg33590.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"dorlbyt7pm"},{"Name":"integrity","Value":"sha256-XcIM7Dw180FcCPdXrM0Jb9P96dQSMUGD4gFczP5YbFw="},{"Name":"label","Value":"_content/ElectronicsStore/images/products/78f24e88-fd34-4567-91ce-037a6ee328a7_dellg33590.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"227090"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022XcIM7Dw180FcCPdXrM0Jb9P96dQSMUGD4gFczP5YbFw=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Apr 2025 18:12:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectronicsStore/images/products/78f24e88-fd34-4567-91ce-037a6ee328a7_dellg33590.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\78f24e88-fd34-4567-91ce-037a6ee328a7_dellg33590.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-XcIM7Dw180FcCPdXrM0Jb9P96dQSMUGD4gFczP5YbFw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"227090"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022XcIM7Dw180FcCPdXrM0Jb9P96dQSMUGD4gFczP5YbFw=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Apr 2025 18:12:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectronicsStore/images/products/841ffc5c-a978-4892-a08a-383b959f9537_google home.5mm0qrt2u4.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\841ffc5c-a978-4892-a08a-383b959f9537_google home.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"5mm0qrt2u4"},{"Name":"integrity","Value":"sha256-g5dWu7YLO33eaVhtEZIL8n02Bk3Ne5kP\u002Bd3/GaRh2Vo="},{"Name":"label","Value":"_content/ElectronicsStore/images/products/841ffc5c-a978-4892-a08a-383b959f9537_google home.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"134503"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022g5dWu7YLO33eaVhtEZIL8n02Bk3Ne5kP\u002Bd3/GaRh2Vo=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Apr 2025 18:24:05 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectronicsStore/images/products/841ffc5c-a978-4892-a08a-383b959f9537_google home.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\841ffc5c-a978-4892-a08a-383b959f9537_google home.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-g5dWu7YLO33eaVhtEZIL8n02Bk3Ne5kP\u002Bd3/GaRh2Vo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"134503"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022g5dWu7YLO33eaVhtEZIL8n02Bk3Ne5kP\u002Bd3/GaRh2Vo=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Apr 2025 18:24:05 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/ElectronicsStore/images/products/90d7de01-f65f-40c1-af6a-d75be240a9cd_xiaominote11s.dhuc7ad7ck.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\90d7de01-f65f-40c1-af6a-d75be240a9cd_xiaominote11s.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -47,6 +167,54 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-r3tFdnV9hOTRoQebkYtbWM6Z6lBELL6YOZQ5xkpl\u002BY0="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"476027"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022r3tFdnV9hOTRoQebkYtbWM6Z6lBELL6YOZQ5xkpl\u002BY0=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Apr 2025 16:44:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectronicsStore/images/products/9e3f0478-8b65-46b5-8a72-9a809fa18ce6_Iphone17.8tmwn3ey6z.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\9e3f0478-8b65-46b5-8a72-9a809fa18ce6_Iphone17.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"8tmwn3ey6z"},{"Name":"integrity","Value":"sha256-fP6d4iFRgAJZY4kQnJ3UJJsF3Wx1HKIXRs1SjdB0xwM="},{"Name":"label","Value":"_content/ElectronicsStore/images/products/9e3f0478-8b65-46b5-8a72-9a809fa18ce6_Iphone17.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"181992"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022fP6d4iFRgAJZY4kQnJ3UJJsF3Wx1HKIXRs1SjdB0xwM=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Apr 2025 18:06:43 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectronicsStore/images/products/9e3f0478-8b65-46b5-8a72-9a809fa18ce6_Iphone17.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\9e3f0478-8b65-46b5-8a72-9a809fa18ce6_Iphone17.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-fP6d4iFRgAJZY4kQnJ3UJJsF3Wx1HKIXRs1SjdB0xwM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"181992"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022fP6d4iFRgAJZY4kQnJ3UJJsF3Wx1HKIXRs1SjdB0xwM=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Apr 2025 18:06:43 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectronicsStore/images/products/bcda152c-cb54-498c-a947-5e7b6a774205_camera.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\bcda152c-cb54-498c-a947-5e7b6a774205_camera.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Je7nLOrvU9pUocWc07BdNuqkTsBuJSX6UvSqvZxi8sQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"57037"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022Je7nLOrvU9pUocWc07BdNuqkTsBuJSX6UvSqvZxi8sQ=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Apr 2025 18:20:55 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectronicsStore/images/products/bcda152c-cb54-498c-a947-5e7b6a774205_camera.pror8gfgrn.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\bcda152c-cb54-498c-a947-5e7b6a774205_camera.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"pror8gfgrn"},{"Name":"integrity","Value":"sha256-Je7nLOrvU9pUocWc07BdNuqkTsBuJSX6UvSqvZxi8sQ="},{"Name":"label","Value":"_content/ElectronicsStore/images/products/bcda152c-cb54-498c-a947-5e7b6a774205_camera.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"57037"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022Je7nLOrvU9pUocWc07BdNuqkTsBuJSX6UvSqvZxi8sQ=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Apr 2025 18:20:55 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectronicsStore/images/products/ebd6bbb6-c174-4ff9-8667-997f8610d3ad_Iphone17.8tmwn3ey6z.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\ebd6bbb6-c174-4ff9-8667-997f8610d3ad_Iphone17.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"8tmwn3ey6z"},{"Name":"integrity","Value":"sha256-fP6d4iFRgAJZY4kQnJ3UJJsF3Wx1HKIXRs1SjdB0xwM="},{"Name":"label","Value":"_content/ElectronicsStore/images/products/ebd6bbb6-c174-4ff9-8667-997f8610d3ad_Iphone17.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"181992"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022fP6d4iFRgAJZY4kQnJ3UJJsF3Wx1HKIXRs1SjdB0xwM=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Apr 2025 18:26:46 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectronicsStore/images/products/ebd6bbb6-c174-4ff9-8667-997f8610d3ad_Iphone17.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\ebd6bbb6-c174-4ff9-8667-997f8610d3ad_Iphone17.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-fP6d4iFRgAJZY4kQnJ3UJJsF3Wx1HKIXRs1SjdB0xwM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"181992"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022fP6d4iFRgAJZY4kQnJ3UJJsF3Wx1HKIXRs1SjdB0xwM=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Apr 2025 18:26:46 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectronicsStore/images/products/fdf5d6de-b059-478c-8770-46cd854efa63_alexa.anytcvwefz.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\fdf5d6de-b059-478c-8770-46cd854efa63_alexa.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"anytcvwefz"},{"Name":"integrity","Value":"sha256-WsMYTqb7hvGZvblMnb1cwBXqOSi4RD6F4VGU/DPDtYs="},{"Name":"label","Value":"_content/ElectronicsStore/images/products/fdf5d6de-b059-478c-8770-46cd854efa63_alexa.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"56257"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022WsMYTqb7hvGZvblMnb1cwBXqOSi4RD6F4VGU/DPDtYs=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Apr 2025 18:25:09 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectronicsStore/images/products/fdf5d6de-b059-478c-8770-46cd854efa63_alexa.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\fdf5d6de-b059-478c-8770-46cd854efa63_alexa.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-WsMYTqb7hvGZvblMnb1cwBXqOSi4RD6F4VGU/DPDtYs="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"56257"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022WsMYTqb7hvGZvblMnb1cwBXqOSi4RD6F4VGU/DPDtYs=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Apr 2025 18:25:09 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/ElectronicsStore/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>

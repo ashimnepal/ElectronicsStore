@@ -115,7 +115,6 @@ C:\Users\ashim\OneDrive\Desktop\grpproject\ElectronicsStore\obj\Debug\net9.0\Ele
 C:\Users\ashim\OneDrive\Desktop\grpproject\ElectronicsStore\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\ashim\OneDrive\Desktop\grpproject\ElectronicsStore\obj\Debug\net9.0\scopedcss\bundle\ElectronicsStore.styles.css
 C:\Users\ashim\OneDrive\Desktop\grpproject\ElectronicsStore\obj\Debug\net9.0\scopedcss\projectbundle\ElectronicsStore.bundle.scp.css
-C:\Users\ashim\OneDrive\Desktop\grpproject\ElectronicsStore\obj\Debug\net9.0\compressed\kiz517djg4-b9sayid5wm.gz
 C:\Users\ashim\OneDrive\Desktop\grpproject\ElectronicsStore\obj\Debug\net9.0\compressed\gf78y3rjt5-61n19gt1b8.gz
 C:\Users\ashim\OneDrive\Desktop\grpproject\ElectronicsStore\obj\Debug\net9.0\compressed\0bksj3wn0p-xtxxf3hu2r.gz
 C:\Users\ashim\OneDrive\Desktop\grpproject\ElectronicsStore\obj\Debug\net9.0\compressed\8wxd3ay8wy-bqjiyaj88i.gz
@@ -195,3 +194,4 @@ C:\Users\ashim\OneDrive\Desktop\grpproject\ElectronicsStore\obj\Debug\net9.0\Ele
 C:\Users\ashim\OneDrive\Desktop\grpproject\ElectronicsStore\obj\Debug\net9.0\ElectronicsStore.genruntimeconfig.cache
 C:\Users\ashim\OneDrive\Desktop\grpproject\ElectronicsStore\obj\Debug\net9.0\ref\ElectronicsStore.dll
 C:\Users\ashim\OneDrive\Desktop\grpproject\ElectronicsStore\obj\Debug\net9.0\ElectronicsStore.sourcelink.json
+C:\Users\ashim\OneDrive\Desktop\grpproject\ElectronicsStore\obj\Debug\net9.0\compressed\kiz517djg4-4rql6rvw6y.gz

@@ -13,8 +13,64 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\074b4599-0a60-464c-873a-00f1c42153a6_z30.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\074b4599-0a60-464c-873a-00f1c42153a6_z30.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\0df4d389-2027-4c4c-a0bd-6c1a9d99e224_xiaominote11s.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0df4d389-2027-4c4c-a0bd-6c1a9d99e224_xiaominote11s.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\25cbde10-6e3f-4d0f-ab70-b96bbc2a27b2_Skullcandy.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\25cbde10-6e3f-4d0f-ab70-b96bbc2a27b2_Skullcandy.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\33a62c6d-8d9a-4d95-a0ae-3c3de715d8b0_xiaomipad4.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\33a62c6d-8d9a-4d95-a0ae-3c3de715d8b0_xiaomipad4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\3dd3dd47-77ab-4cbb-92ec-fe04fa114ced_macbookair.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\3dd3dd47-77ab-4cbb-92ec-fe04fa114ced_macbookair.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\49317b9c-b327-4b3d-8ff7-c8ced8da849b_ipadair4.png",
+      "PackagePath": "staticwebassets\\images\\products\\49317b9c-b327-4b3d-8ff7-c8ced8da849b_ipadair4.png"
+    },
+    {
+      "Id": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\4961fa63-6007-4a64-9447-ed6f40b60109_samsungs25ultra.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\4961fa63-6007-4a64-9447-ed6f40b60109_samsungs25ultra.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\69046581-c0af-4792-aae1-7e035dee6b96_og-airpods-max-202409.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\69046581-c0af-4792-aae1-7e035dee6b96_og-airpods-max-202409.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\78f24e88-fd34-4567-91ce-037a6ee328a7_dellg33590.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\78f24e88-fd34-4567-91ce-037a6ee328a7_dellg33590.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\841ffc5c-a978-4892-a08a-383b959f9537_google home.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\841ffc5c-a978-4892-a08a-383b959f9537_google home.jpg"
+    },
+    {
       "Id": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\90d7de01-f65f-40c1-af6a-d75be240a9cd_xiaominote11s.jpg",
       "PackagePath": "staticwebassets\\images\\products\\90d7de01-f65f-40c1-af6a-d75be240a9cd_xiaominote11s.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\9e3f0478-8b65-46b5-8a72-9a809fa18ce6_Iphone17.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\9e3f0478-8b65-46b5-8a72-9a809fa18ce6_Iphone17.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\bcda152c-cb54-498c-a947-5e7b6a774205_camera.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\bcda152c-cb54-498c-a947-5e7b6a774205_camera.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\ebd6bbb6-c174-4ff9-8667-997f8610d3ad_Iphone17.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\ebd6bbb6-c174-4ff9-8667-997f8610d3ad_Iphone17.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\images\\products\\fdf5d6de-b059-478c-8770-46cd854efa63_alexa.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\fdf5d6de-b059-478c-8770-46cd854efa63_alexa.jpg"
     },
     {
       "Id": "C:\\Users\\ashim\\OneDrive\\Desktop\\grpproject\\ElectronicsStore\\wwwroot\\js\\site.js",

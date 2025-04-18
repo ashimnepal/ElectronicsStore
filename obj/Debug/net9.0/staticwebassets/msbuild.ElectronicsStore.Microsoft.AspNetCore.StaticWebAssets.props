@@ -12,8 +12,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>b9sayid5wm</Fingerprint>
-      <Integrity>j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=</Integrity>
+      <Fingerprint>4rql6rvw6y</Fingerprint>
+      <Integrity>UIMOlNMp/eLq+hpVS6mr9fk1tnxoeVgGGcoHVVGjCY8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</OriginalItemSpec>
@@ -54,6 +54,186 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\074b4599-0a60-464c-873a-00f1c42153a6_z30.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ElectronicsStore</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ElectronicsStore</BasePath>
+      <RelativePath>images/products/074b4599-0a60-464c-873a-00f1c42153a6_z30.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>0ewr05el39</Fingerprint>
+      <Integrity>uDBO7vo5VEdbceXkwbW1HJqIOwsgE3gK3eimZtb2ulo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\074b4599-0a60-464c-873a-00f1c42153a6_z30.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\0df4d389-2027-4c4c-a0bd-6c1a9d99e224_xiaominote11s.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ElectronicsStore</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ElectronicsStore</BasePath>
+      <RelativePath>images/products/0df4d389-2027-4c4c-a0bd-6c1a9d99e224_xiaominote11s.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>dhuc7ad7ck</Fingerprint>
+      <Integrity>r3tFdnV9hOTRoQebkYtbWM6Z6lBELL6YOZQ5xkpl+Y0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\0df4d389-2027-4c4c-a0bd-6c1a9d99e224_xiaominote11s.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\25cbde10-6e3f-4d0f-ab70-b96bbc2a27b2_Skullcandy.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ElectronicsStore</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ElectronicsStore</BasePath>
+      <RelativePath>images/products/25cbde10-6e3f-4d0f-ab70-b96bbc2a27b2_Skullcandy.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>x3h9oemvxb</Fingerprint>
+      <Integrity>3e4kxsJFiosnJicNRGXW2BunToAA825rTaGbvmT4yPY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\25cbde10-6e3f-4d0f-ab70-b96bbc2a27b2_Skullcandy.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\33a62c6d-8d9a-4d95-a0ae-3c3de715d8b0_xiaomipad4.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ElectronicsStore</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ElectronicsStore</BasePath>
+      <RelativePath>images/products/33a62c6d-8d9a-4d95-a0ae-3c3de715d8b0_xiaomipad4.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ulami6a402</Fingerprint>
+      <Integrity>Mqk0CLjJjzU3hnjaWNbqS59apeQBoFw8w295E4GJIsg=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\33a62c6d-8d9a-4d95-a0ae-3c3de715d8b0_xiaomipad4.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\3dd3dd47-77ab-4cbb-92ec-fe04fa114ced_macbookair.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ElectronicsStore</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ElectronicsStore</BasePath>
+      <RelativePath>images/products/3dd3dd47-77ab-4cbb-92ec-fe04fa114ced_macbookair.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>dq23lu01sw</Fingerprint>
+      <Integrity>ld2lMAmOUOlMnJEA1awIRSIdNvyhemRK/q6qxKhnbz8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\3dd3dd47-77ab-4cbb-92ec-fe04fa114ced_macbookair.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\49317b9c-b327-4b3d-8ff7-c8ced8da849b_ipadair4.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ElectronicsStore</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ElectronicsStore</BasePath>
+      <RelativePath>images/products/49317b9c-b327-4b3d-8ff7-c8ced8da849b_ipadair4.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>da3tz14kgq</Fingerprint>
+      <Integrity>5ZyxXn4P0xQvxh2oXLAl2v7kbnoXB1tX+0mjSnxOIvE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\49317b9c-b327-4b3d-8ff7-c8ced8da849b_ipadair4.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\4961fa63-6007-4a64-9447-ed6f40b60109_samsungs25ultra.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ElectronicsStore</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ElectronicsStore</BasePath>
+      <RelativePath>images/products/4961fa63-6007-4a64-9447-ed6f40b60109_samsungs25ultra.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>5tfq12ckby</Fingerprint>
+      <Integrity>iXs2dkybS2d567/C4U/ECg8XhCbEudxnVUORLH0vJ0c=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\4961fa63-6007-4a64-9447-ed6f40b60109_samsungs25ultra.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\69046581-c0af-4792-aae1-7e035dee6b96_og-airpods-max-202409.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ElectronicsStore</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ElectronicsStore</BasePath>
+      <RelativePath>images/products/69046581-c0af-4792-aae1-7e035dee6b96_og-airpods-max-202409.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>052xr5oj3p</Fingerprint>
+      <Integrity>7Adw13oJExKXmrgAUnoigx4g6WperPrOtvFYRMB2md0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\69046581-c0af-4792-aae1-7e035dee6b96_og-airpods-max-202409.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\78f24e88-fd34-4567-91ce-037a6ee328a7_dellg33590.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ElectronicsStore</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ElectronicsStore</BasePath>
+      <RelativePath>images/products/78f24e88-fd34-4567-91ce-037a6ee328a7_dellg33590.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>dorlbyt7pm</Fingerprint>
+      <Integrity>XcIM7Dw180FcCPdXrM0Jb9P96dQSMUGD4gFczP5YbFw=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\78f24e88-fd34-4567-91ce-037a6ee328a7_dellg33590.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\841ffc5c-a978-4892-a08a-383b959f9537_google home.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ElectronicsStore</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ElectronicsStore</BasePath>
+      <RelativePath>images/products/841ffc5c-a978-4892-a08a-383b959f9537_google home.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>5mm0qrt2u4</Fingerprint>
+      <Integrity>g5dWu7YLO33eaVhtEZIL8n02Bk3Ne5kP+d3/GaRh2Vo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\841ffc5c-a978-4892-a08a-383b959f9537_google home.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\90d7de01-f65f-40c1-af6a-d75be240a9cd_xiaominote11s.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>ElectronicsStore</SourceId>
@@ -71,6 +251,78 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\90d7de01-f65f-40c1-af6a-d75be240a9cd_xiaominote11s.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\9e3f0478-8b65-46b5-8a72-9a809fa18ce6_Iphone17.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ElectronicsStore</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ElectronicsStore</BasePath>
+      <RelativePath>images/products/9e3f0478-8b65-46b5-8a72-9a809fa18ce6_Iphone17.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>8tmwn3ey6z</Fingerprint>
+      <Integrity>fP6d4iFRgAJZY4kQnJ3UJJsF3Wx1HKIXRs1SjdB0xwM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\9e3f0478-8b65-46b5-8a72-9a809fa18ce6_Iphone17.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\bcda152c-cb54-498c-a947-5e7b6a774205_camera.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ElectronicsStore</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ElectronicsStore</BasePath>
+      <RelativePath>images/products/bcda152c-cb54-498c-a947-5e7b6a774205_camera.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>pror8gfgrn</Fingerprint>
+      <Integrity>Je7nLOrvU9pUocWc07BdNuqkTsBuJSX6UvSqvZxi8sQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\bcda152c-cb54-498c-a947-5e7b6a774205_camera.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\ebd6bbb6-c174-4ff9-8667-997f8610d3ad_Iphone17.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ElectronicsStore</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ElectronicsStore</BasePath>
+      <RelativePath>images/products/ebd6bbb6-c174-4ff9-8667-997f8610d3ad_Iphone17.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>8tmwn3ey6z</Fingerprint>
+      <Integrity>fP6d4iFRgAJZY4kQnJ3UJJsF3Wx1HKIXRs1SjdB0xwM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\ebd6bbb6-c174-4ff9-8667-997f8610d3ad_Iphone17.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\fdf5d6de-b059-478c-8770-46cd854efa63_alexa.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ElectronicsStore</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ElectronicsStore</BasePath>
+      <RelativePath>images/products/fdf5d6de-b059-478c-8770-46cd854efa63_alexa.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>anytcvwefz</Fingerprint>
+      <Integrity>WsMYTqb7hvGZvblMnb1cwBXqOSi4RD6F4VGU/DPDtYs=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\fdf5d6de-b059-478c-8770-46cd854efa63_alexa.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))">
       <SourceType>Package</SourceType>
