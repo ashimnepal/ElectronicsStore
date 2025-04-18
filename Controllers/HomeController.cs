@@ -27,6 +27,10 @@ public class HomeController : Controller
             .Take(8)
             .ToListAsync();
 
+        // Get all categories to ensure we can display 6 in the view
+        var allCategories = await _context.Categories.ToListAsync();
+        ViewBag.AllCategories = allCategories;
+
         return View(featuredProducts);
     }
 

@@ -83,18 +83,36 @@
     <div class="container">
         <h2 class="text-center mb-4">Shop by Category</h2>
         <div class="row justify-content-center">
-            <div class="col-md-8">
+            <div class="col-md-10">
                 <div class="row row-cols-2 row-cols-md-3 g-4 text-center">
                     @{
+                        var allCategories = ViewBag.AllCategories as List<ElectronicsStore.Models.Category> ?? new List<ElectronicsStore.Models.Category>();
+                        var displayCategories = allCategories.Take(6).ToList();
+                        
+                        // If we have fewer than 6 categories, fill with duplicates
+                        if (displayCategories.Count < 6 && displayCategories.Any())
+                        {
+                            var needed = 6 - displayCategories.Count;
+                            for (int i = 0; i < needed; i++)
+                            {
+                                displayCategories.Add(displayCategories[i % displayCategories.Count]);
+                            }
+                        }
+                        
                         var categoryEndpoint = "/Home/CategoryProducts?categoryId=";
+                        var icons = new[] { "fa-laptop", "fa-mobile-alt", "fa-headphones", "fa-camera", "fa-tv", "fa-gamepad" };
                     }
-                    @foreach (var category in Model.Select(p => p.Category).DistinctBy(c => c?.Id).Where(c => c != null))
+                    
+                    @for (int i = 0; i < Math.Min(displayCategories.Count, 6); i++)
                     {
+                        var category = displayCategories[i];
+                        var iconClass = icons[i];
+                        
                         <div class="col">
                             <a href="@(categoryEndpoint + category.Id)" class="text-decoration-none">
                                 <div class="card h-100 border-0 shadow-sm category-card">
                                     <div class="card-body">
-                                        <i class="fas fa-laptop fs-1 mb-3 text-primary"></i>
+                                        <i class="fas @iconClass fs-1 mb-3 text-primary"></i>
                                         <h5>@category.Name</h5>
                                     </div>
                                 </div>
