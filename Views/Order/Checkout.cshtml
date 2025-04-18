@@ -12,7 +12,7 @@
                     <h5 class="mb-0">Shipping & Payment Information</h5>
                 </div>
                 <div class="card-body">
-                    <form asp-action="PlaceOrder" method="post">
+                    <form asp-action="PlaceOrder" method="post" id="checkoutForm">
                         <div class="mb-3">
                             <label for="shippingAddress" class="form-label">Shipping Address</label>
                             <textarea id="shippingAddress" name="shippingAddress" class="form-control" rows="3" required></textarea>
@@ -42,10 +42,10 @@
 
                         <div class="d-flex justify-content-between">
                             <a asp-controller="Cart" asp-action="Index" class="btn btn-outline-secondary">
-                                <i class="bi bi-arrow-left"></i> Back to Cart
+                                <i class="fas fa-arrow-left me-2"></i>Back to Cart
                             </a>
-                            <button type="submit" class="btn btn-primary">
-                                <i class="bi bi-check-circle"></i> Place Order
+                            <button type="button" id="confirmOrder" class="btn btn-primary">
+                                <i class="fas fa-check-circle me-2"></i>Place Order
                             </button>
                         </div>
                     </form>
@@ -76,4 +76,47 @@
             </div>
         </div>
     </div>
-</div> 
+</div>
+
+<!-- Order Confirmation Modal -->
+<div class="modal fade" id="orderConfirmationModal" tabindex="-1" aria-labelledby="orderConfirmationModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="orderConfirmationModalLabel">Confirm Your Order</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to place this order for <strong>@ViewBag.Total.ToString("C")</strong>?</p>
+                <p>By clicking "Confirm Order", you agree to the terms and conditions of our store.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" id="submitOrder" class="btn btn-success">
+                    <i class="fas fa-check me-2"></i>Confirm Order
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            // Show confirmation modal when Place Order button is clicked
+            $("#confirmOrder").click(function() {
+                if ($("#checkoutForm")[0].checkValidity()) {
+                    $("#orderConfirmationModal").modal("show");
+                } else {
+                    // Trigger HTML5 validation
+                    $("#checkoutForm")[0].reportValidity();
+                }
+            });
+            
+            // Submit form when Confirm Order button in modal is clicked
+            $("#submitOrder").click(function() {
+                $("#checkoutForm").submit();
+            });
+        });
+    </script>
+} 

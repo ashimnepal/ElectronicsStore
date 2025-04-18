@@ -7,6 +7,14 @@
 <div class="container my-4">
     <h1>@ViewData["Title"]</h1>
 
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["Success"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
     <div class="card">
         <div class="card-header bg-primary text-white">
             <h5 class="mb-0">Order History</h5>
@@ -74,4 +82,21 @@
             _ => "bg-secondary"
         };
     }
+}
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            // Update cart count to 0 when viewing orders after successfully placing an order
+            if ("@TempData["Success"]" != "") {
+                // Update cart count in the navbar
+                $('.cart-count').text("0");
+            }
+            
+            // Auto-dismiss alerts after 5 seconds
+            setTimeout(function() {
+                $('.alert').alert('close');
+            }, 5000);
+        });
+    </script>
 } 

@@ -56,37 +56,90 @@
                                     <td>
                                         <div class="btn-group">
                                             <a asp-action="Details" asp-route-id="@order.Id" class="btn btn-sm btn-info">
-                                                <i class="bi bi-eye"></i> View
+                                                <i class="fas fa-eye"></i> View
                                             </a>
                                             <button type="button" class="btn btn-sm btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                                                 <span class="visually-hidden">Toggle Dropdown</span>
                                             </button>
                                             <ul class="dropdown-menu">
                                                 <li>
+                                                    <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#orderDetailsModal-@order.Id">
+                                                        <i class="fas fa-info-circle"></i> Quick View
+                                                    </a>
+                                                </li>
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li>
                                                     <a class="dropdown-item" href="@Url.Action("UpdateStatus", new { id = order.Id, status = ElectronicsStore.Models.OrderStatus.Processing })">
-                                                        <i class="bi bi-gear"></i> Mark as Processing
+                                                        <i class="fas fa-gear"></i> Mark as Processing
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a class="dropdown-item" href="@Url.Action("UpdateStatus", new { id = order.Id, status = ElectronicsStore.Models.OrderStatus.Shipped })">
-                                                        <i class="bi bi-truck"></i> Mark as Shipped
+                                                        <i class="fas fa-truck"></i> Mark as Shipped
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a class="dropdown-item" href="@Url.Action("UpdateStatus", new { id = order.Id, status = ElectronicsStore.Models.OrderStatus.Delivered })">
-                                                        <i class="bi bi-check-circle"></i> Mark as Delivered
+                                                        <i class="fas fa-check-circle"></i> Mark as Delivered
                                                     </a>
                                                 </li>
                                                 <li><hr class="dropdown-divider"></li>
                                                 <li>
                                                     <a class="dropdown-item text-danger" href="@Url.Action("UpdateStatus", new { id = order.Id, status = ElectronicsStore.Models.OrderStatus.Cancelled })">
-                                                        <i class="bi bi-x-circle"></i> Cancel Order
+                                                        <i class="fas fa-x-circle"></i> Cancel Order
                                                     </a>
                                                 </li>
                                             </ul>
                                         </div>
                                     </td>
                                 </tr>
+                                
+                                <!-- Order Details Modal for order @order.Id -->
+                                <div class="modal fade" id="orderDetailsModal-@order.Id" tabindex="-1" aria-labelledby="orderDetailsModal-@order.Id-Label" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header bg-primary text-white">
+                                                <h5 class="modal-title" id="orderDetailsModal-@order.Id-Label">Order #@order.Id Details</h5>
+                                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <h6 class="text-muted">Customer Information</h6>
+                                                        <p><strong>Name:</strong> @(order.User?.UserName ?? "Unknown")</p>
+                                                        <p><strong>Email:</strong> @(order.User?.Email ?? "Unknown")</p>
+                                                        <p><strong>Address:</strong> @order.ShippingAddress</p>
+                                                    </div>
+                                                    
+                                                    <div class="col-md-6">
+                                                        <h6 class="text-muted">Order Information</h6>
+                                                        <p><strong>Date:</strong> @order.OrderDate.ToString("MMM dd, yyyy hh:mm tt")</p>
+                                                        <p><strong>Status:</strong> <span class="badge @GetStatusClass(order.Status)">@order.Status</span></p>
+                                                        <p><strong>Payment:</strong> @order.PaymentMethod</p>
+                                                        <p><strong>Total:</strong> @order.TotalAmount.ToString("C")</p>
+                                                    </div>
+                                                </div>
+                                                
+                                                <hr>
+                                                
+                                                <!-- Show button to load order items via AJAX -->
+                                                <button type="button" class="btn btn-outline-primary load-order-items w-100 mb-3" data-order-id="@order.Id">
+                                                    <i class="fas fa-boxes me-2"></i>Load Order Items
+                                                </button>
+                                                
+                                                <div id="order-items-container-@order.Id" class="d-none">
+                                                    <!-- Order items will be loaded here via AJAX -->
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                <a asp-action="Details" asp-route-id="@order.Id" class="btn btn-primary">
+                                                    <i class="fas fa-eye me-2"></i>View Full Details
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             }
                         </tbody>
                     </table>
@@ -101,6 +154,40 @@
         $(document).ready(function() {
             $('#ordersTable').DataTable({
                 order: [[2, 'desc']] // Sort by date descending
+            });
+            
+            // Handle loading order items via AJAX
+            $('.load-order-items').click(function() {
+                const orderId = $(this).data('order-id');
+                const container = $(`#order-items-container-${orderId}`);
+                
+                // If already loaded, just toggle visibility
+                if (!container.hasClass('d-none') || container.data('loaded')) {
+                    container.toggleClass('d-none');
+                    return;
+                }
+                
+                // Show loading indicator
+                container.html('<div class="text-center my-4"><div class="spinner-border text-primary" role="status"></div><p class="mt-2">Loading order items...</p></div>');
+                container.removeClass('d-none');
+                
+                // Load order items via AJAX
+                $.ajax({
+                    url: '@Url.Action("GetOrderItems", "Order")',
+                    type: 'GET',
+                    data: { id: orderId },
+                    success: function(response) {
+                        container.html(response);
+                        container.data('loaded', true);
+                        
+                        // Change button text
+                        const button = $(`.load-order-items[data-order-id="${orderId}"]`);
+                        button.html('<i class="fas fa-eye-slash me-2"></i>Toggle Order Items');
+                    },
+                    error: function() {
+                        container.html('<div class="alert alert-danger">Failed to load order items. Please try again.</div>');
+                    }
+                });
             });
         });
     </script>

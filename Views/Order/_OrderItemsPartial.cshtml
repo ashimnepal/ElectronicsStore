@@ -1,0 +1,41 @@
+@model IEnumerable<ElectronicsStore.Models.OrderItem>
+
+<div class="table-responsive">
+    <table class="table table-sm table-hover">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th class="text-end">Subtotal</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        <div class="d-flex align-items-center">
+                            <img src="@(item.Product?.ImageUrl ?? "/images/no-image.jpg")" 
+                                alt="@item.Product?.Name" 
+                                class="img-thumbnail me-2" 
+                                style="width: 40px; height: 40px; object-fit: contain;" />
+                            <div>
+                                @item.Product?.Name
+                            </div>
+                        </div>
+                    </td>
+                    <td>@item.Price.ToString("C")</td>
+                    <td>@item.Quantity</td>
+                    <td class="text-end">@((item.Price * item.Quantity).ToString("C"))</td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="3" class="text-end">Total:</th>
+                <th class="text-end">@Model.Sum(item => item.Price * item.Quantity).ToString("C")</th>
+            </tr>
+        </tfoot>
+    </table>
+</div> 

@@ -103,14 +103,92 @@
                             <strong>Total:</strong>
                             <strong id="cart-total">@cartTotal.ToString("C")</strong>
                         </div>
-                        <a asp-controller="Order" asp-action="Checkout" class="btn btn-success btn-lg w-100">
+                        <button id="checkout-btn" class="btn btn-success btn-lg w-100 mb-2">
                             <i class="fas fa-lock me-2"></i>Proceed to Checkout
-                        </a>
+                        </button>
+                        <form asp-controller="Order" asp-action="QuickCheckout" method="post" id="quick-checkout-form">
+                            <button type="button" id="quick-checkout-btn" class="btn btn-outline-success w-100">
+                                <i class="fas fa-bolt me-2"></i>Quick Checkout
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     }
+</div>
+
+<!-- Checkout Confirmation Modal -->
+<div class="modal fade" id="checkoutConfirmationModal" tabindex="-1" aria-labelledby="checkoutConfirmationModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="checkoutConfirmationModalLabel">Place Your Order</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="direct-checkout-form" asp-controller="Order" asp-action="DirectCheckout" method="post">
+                    <div class="mb-3">
+                        <label for="shippingAddress" class="form-label">Shipping Address</label>
+                        <textarea id="shippingAddress" name="shippingAddress" class="form-control" rows="3" required></textarea>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Payment Method</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="paymentMethod" id="creditCard" value="Credit Card" checked>
+                            <label class="form-check-label" for="creditCard">
+                                Credit Card
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="paymentMethod" id="paypal" value="PayPal">
+                            <label class="form-check-label" for="paypal">
+                                PayPal
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="paymentMethod" id="cashOnDelivery" value="Cash on Delivery">
+                            <label class="form-check-label" for="cashOnDelivery">
+                                Cash on Delivery
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <p class="mb-0 mt-4"><strong>Order Total: <span id="modal-cart-total">@cartTotal.ToString("C")</span></strong></p>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" id="submitDirectOrder" class="btn btn-success">
+                    <i class="fas fa-check-circle me-2"></i>Place Order Now
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Quick Checkout Confirmation Modal -->
+<div class="modal fade" id="quickCheckoutConfirmationModal" tabindex="-1" aria-labelledby="quickCheckoutConfirmationModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="quickCheckoutConfirmationModalLabel">Confirm Quick Checkout</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Do you want to place your order immediately with default shipping information?</p>
+                <p>This will skip the checkout form and use your saved address.</p>
+                <p>Total: <strong>@cartTotal.ToString("C")</strong></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" id="confirmQuickCheckout" class="btn btn-success">
+                    <i class="fas fa-bolt me-2"></i>Place Order Now
+                </button>
+            </div>
+        </div>
+    </div>
 </div>
 
 @section Scripts {
@@ -161,6 +239,33 @@
                 }
             });
             
+            // Handle checkout button with modal
+            $('#checkout-btn').click(function(e) {
+                e.preventDefault();
+                $('#checkoutConfirmationModal').modal('show');
+            });
+            
+            // Handle quick checkout button with modal
+            $('#quick-checkout-btn').click(function(e) {
+                e.preventDefault();
+                $('#quickCheckoutConfirmationModal').modal('show');
+            });
+            
+            // Handle quick checkout confirmation
+            $('#confirmQuickCheckout').click(function() {
+                $('#quick-checkout-form').submit();
+            });
+            
+            // Handle direct checkout submission
+            $('#submitDirectOrder').click(function() {
+                if ($("#direct-checkout-form")[0].checkValidity()) {
+                    $("#direct-checkout-form").submit();
+                } else {
+                    // Trigger HTML5 validation
+                    $("#direct-checkout-form")[0].reportValidity();
+                }
+            });
+            
             // Function to update cart item quantity
             function updateCartItemQuantity(cartItemId, quantity) {
                 $.ajax({
@@ -175,6 +280,7 @@
                             $(`.item-total[data-id="${cartItemId}"]`).text('$' + response.itemTotal.toFixed(2));
                             $('#cart-subtotal').text('$' + response.cartTotal.toFixed(2));
                             $('#cart-total').text('$' + response.cartTotal.toFixed(2));
+                            $('#modal-cart-total').text('$' + response.cartTotal.toFixed(2));
                             updateCartCount(response.cartCount);
                         }
                     }
@@ -195,6 +301,7 @@
                             $(`tr[data-id="${cartItemId}"]`).remove();
                             $('#cart-subtotal').text('$' + response.cartTotal.toFixed(2));
                             $('#cart-total').text('$' + response.cartTotal.toFixed(2));
+                            $('#modal-cart-total').text('$' + response.cartTotal.toFixed(2));
                             updateCartCount(response.cartCount);
                             
                             // If cart is empty, refresh the page

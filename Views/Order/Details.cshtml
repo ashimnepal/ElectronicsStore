@@ -104,6 +104,18 @@
     </div>
 </div>
 
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            // Update cart count to 0 when viewing order details immediately after placing an order
+            if ("@TempData["Success"]" != "") {
+                // Update cart count in the navbar
+                $('.cart-count').text("0");
+            }
+        });
+    </script>
+}
+
 @functions {
     public string GetStatusClass(ElectronicsStore.Models.OrderStatus status)
     {

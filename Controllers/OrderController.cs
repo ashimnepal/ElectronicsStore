@@ -72,6 +72,59 @@ namespace ElectronicsStore.Controllers
             return View();
         }
 
+        [Authorize]
+        [HttpPost]
+        public async Task<IActionResult> QuickCheckout()
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var user = await _userManager.FindByIdAsync(userId);
+            
+            var cartItems = await _context.CartItems
+                .Where(c => c.CartId == userId)
+                .Include(c => c.Product)
+                .ToListAsync();
+
+            if (cartItems.Count == 0)
+            {
+                TempData["Error"] = "Your cart is empty";
+                return RedirectToAction("Index", "Cart");
+            }
+
+            var total = cartItems.Sum(item => item.Product.Price * item.Quantity);
+
+            // Create the order with default values
+            var order = new Order
+            {
+                UserId = userId,
+                OrderDate = DateTime.Now,
+                TotalAmount = total,
+                ShippingAddress = user?.Address ?? "Default shipping address",
+                PaymentMethod = "Cash on Delivery",
+                Status = OrderStatus.Pending,
+                OrderItems = new List<OrderItem>()
+            };
+
+            // Add order items
+            foreach (var item in cartItems)
+            {
+                order.OrderItems.Add(new OrderItem
+                {
+                    ProductId = item.ProductId,
+                    Quantity = item.Quantity,
+                    Price = item.Product.Price
+                });
+            }
+
+            _context.Orders.Add(order);
+
+            // Clear the cart
+            _context.CartItems.RemoveRange(cartItems);
+            await _context.SaveChangesAsync();
+
+            TempData["Success"] = "Your order has been placed successfully!";
+            return RedirectToAction(nameof(Details), new { id = order.Id });
+        }
+
         [HttpPost]
         [Authorize]
         [ValidateAntiForgeryToken]
@@ -121,7 +174,58 @@ namespace ElectronicsStore.Controllers
             await _context.SaveChangesAsync();
 
             TempData["Success"] = "Your order has been placed successfully!";
-            return RedirectToAction(nameof(Details), new { id = order.Id });
+            return RedirectToAction(nameof(Index));
+        }
+
+        [HttpPost]
+        [Authorize]
+        public async Task<IActionResult> DirectCheckout(string shippingAddress, string paymentMethod)
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var cartItems = await _context.CartItems
+                .Where(c => c.CartId == userId)
+                .Include(c => c.Product)
+                .ToListAsync();
+
+            if (cartItems.Count == 0)
+            {
+                TempData["Error"] = "Your cart is empty";
+                return RedirectToAction("Index", "Cart");
+            }
+
+            var total = cartItems.Sum(item => item.Product.Price * item.Quantity);
+
+            // Create the order
+            var order = new Order
+            {
+                UserId = userId,
+                OrderDate = DateTime.Now,
+                TotalAmount = total,
+                ShippingAddress = shippingAddress,
+                PaymentMethod = paymentMethod,
+                Status = OrderStatus.Pending,
+                OrderItems = new List<OrderItem>()
+            };
+
+            // Add order items
+            foreach (var item in cartItems)
+            {
+                order.OrderItems.Add(new OrderItem
+                {
+                    ProductId = item.ProductId,
+                    Quantity = item.Quantity,
+                    Price = item.Product.Price
+                });
+            }
+
+            _context.Orders.Add(order);
+
+            // Clear the cart
+            _context.CartItems.RemoveRange(cartItems);
+            await _context.SaveChangesAsync();
+
+            TempData["Success"] = "Your order has been placed successfully!";
+            return RedirectToAction(nameof(Index));
         }
 
         [Authorize(Roles = "Admin")]
@@ -149,6 +253,22 @@ namespace ElectronicsStore.Controllers
 
             TempData["Success"] = "Order status updated successfully";
             return RedirectToAction(nameof(ManageOrders));
+        }
+
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> GetOrderItems(int id)
+        {
+            var order = await _context.Orders
+                .Include(o => o.OrderItems)
+                .ThenInclude(oi => oi.Product)
+                .FirstOrDefaultAsync(o => o.Id == id);
+
+            if (order == null)
+            {
+                return NotFound();
+            }
+
+            return PartialView("_OrderItemsPartial", order.OrderItems);
         }
     }
 } 
