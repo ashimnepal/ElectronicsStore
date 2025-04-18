@@ -1,0 +1,122 @@
+@model IEnumerable<ElectronicsStore.Models.Order>
+
+@{
+    ViewData["Title"] = "Manage Orders";
+}
+
+<div class="container my-4">
+    <h1>@ViewData["Title"]</h1>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["Success"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <h5 class="mb-0">All Orders</h5>
+        </div>
+        <div class="card-body">
+            @if (!Model.Any())
+            {
+                <div class="alert alert-info">
+                    <p class="mb-0">No orders have been placed yet.</p>
+                </div>
+            }
+            else
+            {
+                <div class="table-responsive">
+                    <table class="table table-hover" id="ordersTable">
+                        <thead>
+                            <tr>
+                                <th>Order #</th>
+                                <th>Customer</th>
+                                <th>Date</th>
+                                <th>Total</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var order in Model)
+                            {
+                                <tr>
+                                    <td>@order.Id</td>
+                                    <td>@(order.User?.UserName ?? "Unknown")</td>
+                                    <td>@order.OrderDate.ToString("MM/dd/yyyy HH:mm")</td>
+                                    <td>@order.TotalAmount.ToString("C")</td>
+                                    <td>
+                                        <span class="badge @GetStatusClass(order.Status)">
+                                            @order.Status
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <a asp-action="Details" asp-route-id="@order.Id" class="btn btn-sm btn-info">
+                                                <i class="bi bi-eye"></i> View
+                                            </a>
+                                            <button type="button" class="btn btn-sm btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="visually-hidden">Toggle Dropdown</span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a class="dropdown-item" href="@Url.Action("UpdateStatus", new { id = order.Id, status = ElectronicsStore.Models.OrderStatus.Processing })">
+                                                        <i class="bi bi-gear"></i> Mark as Processing
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="@Url.Action("UpdateStatus", new { id = order.Id, status = ElectronicsStore.Models.OrderStatus.Shipped })">
+                                                        <i class="bi bi-truck"></i> Mark as Shipped
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="@Url.Action("UpdateStatus", new { id = order.Id, status = ElectronicsStore.Models.OrderStatus.Delivered })">
+                                                        <i class="bi bi-check-circle"></i> Mark as Delivered
+                                                    </a>
+                                                </li>
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li>
+                                                    <a class="dropdown-item text-danger" href="@Url.Action("UpdateStatus", new { id = order.Id, status = ElectronicsStore.Models.OrderStatus.Cancelled })">
+                                                        <i class="bi bi-x-circle"></i> Cancel Order
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            $('#ordersTable').DataTable({
+                order: [[2, 'desc']] // Sort by date descending
+            });
+        });
+    </script>
+}
+
+@functions {
+    public string GetStatusClass(ElectronicsStore.Models.OrderStatus status)
+    {
+        return status switch
+        {
+            ElectronicsStore.Models.OrderStatus.Pending => "bg-warning text-dark",
+            ElectronicsStore.Models.OrderStatus.Processing => "bg-info text-dark",
+            ElectronicsStore.Models.OrderStatus.Shipped => "bg-primary",
+            ElectronicsStore.Models.OrderStatus.Delivered => "bg-success",
+            ElectronicsStore.Models.OrderStatus.Cancelled => "bg-danger",
+            _ => "bg-secondary"
+        };
+    }
+} 
