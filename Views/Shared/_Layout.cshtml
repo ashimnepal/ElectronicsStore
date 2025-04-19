@@ -143,12 +143,7 @@
                     <p class="text-light mb-2"><i class="fas fa-envelope me-2"></i>info@electronicsstore.com</p>
                     <p class="text-light mb-2"><i class="fas fa-clock me-2"></i>Mon-Sat: 9AM - 6PM</p>
                     
-                    <div class="mt-4">
-                        <img src="https://via.placeholder.com/60x30?text=Visa" alt="Visa" class="payment-icon me-2">
-                        <img src="https://via.placeholder.com/60x30?text=MasterCard" alt="MasterCard" class="payment-icon me-2">
-                        <img src="https://via.placeholder.com/60x30?text=PayPal" alt="PayPal" class="payment-icon me-2">
-                        <img src="https://via.placeholder.com/60x30?text=AmEx" alt="American Express" class="payment-icon">
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -173,7 +168,7 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+     @await RenderSectionAsync("Scripts", required: false)  <!--Renders any scripts defined in child views that are placed in the "Scripts" section -->
 </body>
 </html>
 
