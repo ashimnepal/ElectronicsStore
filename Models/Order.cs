@@ -21,7 +21,7 @@ namespace ElectronicsStore.Models
         public OrderStatus Status { get; set; } = OrderStatus.Pending;
         
         // Navigation property for order items
-        public ICollection<OrderItem>? OrderItems { get; set; }
+        public ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
     }
     
     public enum OrderStatus

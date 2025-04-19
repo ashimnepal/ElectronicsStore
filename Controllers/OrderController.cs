@@ -82,6 +82,31 @@ namespace ElectronicsStore.Controllers
             return View(order);
         }
 
+        // Displays detailed information about a specific order for admins
+        // GET: /Order/AdminOrderDetails/{id}
+        // Parameters: id - The ID of the order to display
+        // Only accessible to users with the Admin role
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> AdminOrderDetails(int id)
+        {
+            // Find the order with its related items and products
+            // No user ID filter for admins - they can view any order
+            var order = await _context.Orders
+                .Include(o => o.User)
+                .Include(o => o.OrderItems)
+                .ThenInclude(oi => oi.Product)
+                .FirstOrDefaultAsync(o => o.Id == id);
+
+            // Return 404 if the order doesn't exist
+            if (order == null)
+            {
+                return NotFound();
+            }
+
+            // Display the order details view with the complete order information
+            return View("Details", order);
+        }
+
         // Displays the checkout form with shipping and payment options
         // GET: /Order/Checkout
         // Requires the user to be authenticated
@@ -364,21 +389,38 @@ namespace ElectronicsStore.Controllers
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> GetOrderItems(int id)
         {
-            // Find the order with its related items and products
-            var order = await _context.Orders
-                .Include(o => o.OrderItems)
-                .ThenInclude(oi => oi.Product)
-                .FirstOrDefaultAsync(o => o.Id == id);
-
-            // Return 404 if the order doesn't exist
-            if (order == null)
+            try
             {
-                return NotFound();
-            }
+                // Find the order with its related items and products
+                var order = await _context.Orders
+                    .Include(o => o.OrderItems)
+                    .ThenInclude(oi => oi.Product)
+                    .FirstOrDefaultAsync(o => o.Id == id);
 
-            // Return a partial view with just the order items
-            // This is used for AJAX loading in the admin order details modal
-            return PartialView("_OrderItemsPartial", order.OrderItems);
+                // Return 404 if the order doesn't exist
+                if (order == null)
+                {
+                    return NotFound($"Order with ID {id} not found.");
+                }
+
+                // Check if order has any items
+                if (order.OrderItems == null || !order.OrderItems.Any())
+                {
+                    return PartialView("_OrderItemsPartial", new List<OrderItem>());
+                }
+
+                // Return a partial view with just the order items
+                // This is used for AJAX loading in the admin order details modal
+                return PartialView("_OrderItemsPartial", order.OrderItems);
+            }
+            catch (Exception ex)
+            {
+                // Log the error
+                Console.WriteLine($"Error in GetOrderItems: {ex.Message}");
+                
+                // Return an error message
+                return StatusCode(500, $"An error occurred while retrieving order items: {ex.Message}");
+            }
         }
     }
 } 
